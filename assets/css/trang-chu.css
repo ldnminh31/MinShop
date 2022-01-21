@@ -27,7 +27,9 @@
     }
     /* navbar end */
 }
-
+*{
+    font-family: ProductSans;
+}
 /* NAVBAR START */
 #navbar{
     background-color: #7D84B2;
@@ -40,3 +42,35 @@
     text-decoration: none;
 }
 /* NAVBAR END */
+/* MENUBAR START */
+#menu-bar{
+    padding-top: 10px;
+}
+#menu-bar-logo{
+    font-size: 2rem;
+}
+#menu-bar-logo a:hover{
+    text-decoration: none;
+}
+#menu-bar-logo a span:first-child{
+    color: #7D84B2;
+}
+#menu-bar-logo a span:last-child{
+    color: #a0ca44;
+}
+#menu-bar-list{
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+#menu-bar-list ul li a{
+    color: #7D84B2;
+    margin-right: 60px;
+}
+#menu-bar-list ul li a:hover{
+    text-decoration: none;
+}
+#menu-bar-cart{
+    padding-top: 10px;
+    padding-left: 50px;
+}
+/* MENUBAR END */
