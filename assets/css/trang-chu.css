@@ -1,76 +1,76 @@
 /* Font start */
 /* Font Product Sans */
-@font-face{
-    font-family: ProductSans;
-    src: url('/assets/fonts/ProductSans/Regular.otf');
+@font-face {
+  font-family: ProductSans;
+  src: url("/assets/fonts/ProductSans/Regular.otf");
 }
 /* Font end */
 
 @media (min-width: 320px) {
-    /* navbar start */
-    #navbar{
-        font-size: 0.6rem;
-    }
-    #navbar-left{
-        display: none;
-    }
-    /* navbar end */
+  /* navbar start */
+  #navbar {
+    font-size: 0.6rem;
+  }
+  #navbar-left {
+    display: none;
+  }
+  /* navbar end */
 }
 @media (min-width: 768px) {
-    /* navbar start */
-    #navbar{
-        padding: 5px 30px;
-        font-size: 0.9rem;
-    }
-    #navbar-left{
-        display: block;
-    }
-    /* navbar end */
+  /* navbar start */
+  #navbar {
+    padding: 5px 30px;
+    font-size: 0.9rem;
+  }
+  #navbar-left {
+    display: block;
+  }
+  /* navbar end */
 }
-*{
-    font-family: ProductSans;
+* {
+  font-family: ProductSans;
 }
 /* NAVBAR START */
-#navbar{
-    background-color: #7D84B2;
+#navbar {
+  background-color: #7d84b2;
 }
-#navbar a{
-    font-family: ProductSans;
-    color: #F9F9ED;
+#navbar a {
+  font-family: ProductSans;
+  color: #f9f9ed;
 }
-#navbar a:hover{
-    text-decoration: none;
+#navbar a:hover {
+  text-decoration: none;
 }
 /* NAVBAR END */
 /* MENUBAR START */
-#menu-bar{
-    padding-top: 10px;
+#menu-bar {
+  padding-top: 10px;
 }
-#menu-bar-logo{
-    font-size: 2rem;
+#menu-bar-logo {
+  font-size: 2rem;
 }
-#menu-bar-logo a:hover{
-    text-decoration: none;
+#menu-bar-logo a:hover {
+  text-decoration: none;
 }
-#menu-bar-logo a span:first-child{
-    color: #7D84B2;
+#menu-bar-logo a span:first-child {
+  color: #7d84b2;
 }
-#menu-bar-logo a span:last-child{
-    color: #a0ca44;
+#menu-bar-logo a span:last-child {
+  color: #a0ca44;
 }
-#menu-bar-list{
-    box-sizing: border-box;
-    padding-top: 15px;
+#menu-bar-list {
+  box-sizing: border-box;
+  padding-top: 15px;
 }
-#menu-bar-list ul li a{
-    color: #7D84B2;
-    margin-right: 60px;
+#menu-bar-list ul li a {
+  color: #7d84b2;
+  margin-right: 60px;
 }
-#menu-bar-list ul li a:hover{
-    text-decoration: none;
+#menu-bar-list ul li a:hover {
+  text-decoration: none;
 }
-#menu-bar-cart{
-    padding-top: 10px;
-    padding-left: 50px;
+#menu-bar-cart {
+  padding-top: 10px;
+  padding-left: 20px;
 }
 /* MENUBAR END */
