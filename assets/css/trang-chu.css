@@ -1,0 +1,42 @@
+/* Font start */
+/* Font Product Sans */
+@font-face{
+    font-family: ProductSans;
+    src: url('/assets/fonts/ProductSans/Regular.otf');
+}
+/* Font end */
+
+@media (min-width: 320px) {
+    /* navbar start */
+    #navbar{
+        font-size: 0.6rem;
+    }
+    #navbar-left{
+        display: none;
+    }
+    /* navbar end */
+}
+@media (min-width: 768px) {
+    /* navbar start */
+    #navbar{
+        padding: 5px 30px;
+        font-size: 0.9rem;
+    }
+    #navbar-left{
+        display: block;
+    }
+    /* navbar end */
+}
+
+/* NAVBAR START */
+#navbar{
+    background-color: #7D84B2;
+}
+#navbar a{
+    font-family: ProductSans;
+    color: #F9F9ED;
+}
+#navbar a:hover{
+    text-decoration: none;
+}
+/* NAVBAR END */
