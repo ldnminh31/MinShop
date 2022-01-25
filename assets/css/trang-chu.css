@@ -27,11 +27,11 @@
     font-size: 0.9rem;
   }
   #navbar-left {
-    padding-left: 30px;
+    padding-left: 60px;
     display: block;
   }
   #navbar-right{
-    padding-right: 30px;
+    padding-right: 60px;
   }
   /* navbar end */
 }
@@ -53,7 +53,7 @@
 }
 #menu-bar-logo {
   padding: 0px;
-  padding-left: 30px;
+  padding-left: 60px;
   font-size: 3rem;
 }
 #menu-bar-logo a:hover {
@@ -67,9 +67,10 @@
 }
 #menu-bar-list {
   box-sizing: border-box;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 #menu-bar-list ul li a {
+  box-sizing: border-box;
   color: #7d84b2;
   margin-right: 60px;
 }
@@ -77,8 +78,9 @@
   text-decoration: none;
 }
 #menu-bar-cart {
+  box-sizing: border-box;
   padding: 0px;
-  background-color: yellow;
-  padding-right: 30px;
+  padding-top: 5px;
+  padding-right: 60px;
 }
 /* MENUBAR END */
