@@ -20,70 +20,82 @@
   /* navbar end */
 }
 /* tablet tro len */
-@media (min-width: 768px) {
-  /* navbar start */
-  #navbar {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 0.9rem;
-    background-color: #7d84b2;
-  }
-  #navbar-left {
-    padding-left: 60px;
-    display: block;
-  }
-  #navbar-right {
-    padding-right: 60px;
-  }
-  #navbar a {
-    font-family: ProductSans;
-    color: #f9f9ed;
-  }
-  #navbar a:hover {
-    text-decoration: none;
-  }
+
+/* navbar start */
+#navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.9rem;
+  background-color: #7d84b2;
 }
-  /* MENUBAR START */
-  #menu-bar{
-  }
-  #menu-bar-logo {
-    padding: 0px;
-    padding-left: 50px;
-    font-size: 3rem;
-  }
-  #menu-bar-logo a:hover {
-    text-decoration: none;
-  }
-  #menu-bar-logo a span:first-child {
-    color: #7d84b2;
-  }
-  #menu-bar-logo a span:last-child {
-    color: #a0ca44;
-  }
-  #menu-bar-list {
-    padding: 20px 0px 0px 0px;
-    box-sizing: border-box;
-  }
-  #menu-bar-list ul li a {
-    box-sizing: border-box;
-    color: #7d84b2;
-    margin-right: 60px;
-  }
-  #menu-bar-list ul li a:hover {
-    text-decoration: none;
-  }
-  #menu-bar-cart {
-    box-sizing: border-box;
-    padding: 0px;
-    padding-top: 5px;
-    padding-right: 60px;
-  }
-  /* MENUBAR END */
+#navbar-left {
+  padding-left: 60px;
+  display: block;
 }
+#navbar-right {
+  padding-right: 60px;
+}
+#navbar a {
+  font-family: ProductSans;
+  color: #f9f9ed;
+}
+#navbar a:hover {
+  text-decoration: none;
+}
+/* MENUBAR START */
+#menu-bar-logo {
+  padding: 0px;
+  padding-left: 50px;
+  font-size: 3rem;
+}
+#menu-bar-logo a:hover {
+  text-decoration: none;
+}
+#menu-bar-logo a span:first-child {
+  color: #7d84b2;
+}
+#menu-bar-logo a span:last-child {
+  color: #a0ca44;
+}
+#menu-bar-list {
+  padding: 20px 0px 0px 0px;
+  box-sizing: border-box;
+}
+#menu-bar-list ul li a {
+  box-sizing: border-box;
+  color: #7d84b2;
+  margin-right: 60px;
+}
+#menu-bar-list ul li a:hover {
+  text-decoration: none;
+}
+#menu-bar-cart {
+  box-sizing: border-box;
+  padding: 0px;
+  padding-top: 5px;
+  padding-right: 60px;
+}
+/* MENUBAR END */
 
 /* BANNER START */
 #banner {
   background-color: #f9f9ed;
 }
-
+.banner-custom{
+  position: relative;
+}
+.banner-text{
+  color: #404987;
+  background-color: #f9f9ed;
+  position: absolute;
+  margin: 0px;
+  margin-top: 50px;
+  margin-left: 200px;
+}
+.banner-button{
+  margin-top: 30px;
+  border: none;
+  background-color: #a0ca44;
+  color: #404987;
+}
 /* BANNER END */
