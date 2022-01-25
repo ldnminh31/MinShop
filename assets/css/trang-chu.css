@@ -5,6 +5,9 @@
   src: url("/assets/fonts/ProductSans/Regular.otf");
 }
 /* Font end */
+* {
+  font-family: ProductSans;
+}
 
 @media (min-width: 320px) {
   /* navbar start */
@@ -19,16 +22,18 @@
 @media (min-width: 768px) {
   /* navbar start */
   #navbar {
-    padding: 5px 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-size: 0.9rem;
   }
   #navbar-left {
+    padding-left: 30px;
     display: block;
   }
+  #navbar-right{
+    padding-right: 30px;
+  }
   /* navbar end */
-}
-* {
-  font-family: ProductSans;
 }
 /* NAVBAR START */
 #navbar {
@@ -44,10 +49,12 @@
 /* NAVBAR END */
 /* MENUBAR START */
 #menu-bar {
-  padding-top: 10px;
+
 }
 #menu-bar-logo {
-  font-size: 2rem;
+  padding: 0px;
+  padding-left: 30px;
+  font-size: 3rem;
 }
 #menu-bar-logo a:hover {
   text-decoration: none;
@@ -70,7 +77,8 @@
   text-decoration: none;
 }
 #menu-bar-cart {
-  padding-top: 10px;
-  padding-left: 20px;
+  padding: 0px;
+  background-color: yellow;
+  padding-right: 30px;
 }
 /* MENUBAR END */
