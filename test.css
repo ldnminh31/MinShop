@@ -1,11 +1,6 @@
-.banner-1, .banner-2{
-    position: relative;
-    background-color: #f9f9ed;
-}
-.carousel-inner .item .banner-text{
-    background-color: #f9f9ed;
-    position: absolute;
-    margin: 0px;
-    padding: 0px;
-    padding-left: 30px;
+.featured{
+    background-color: aqua;
+    height: 200px;
+    background-image: url(/assets/imgs/home/featured-1.jpg);
+    
 }
