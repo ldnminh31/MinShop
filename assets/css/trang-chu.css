@@ -162,3 +162,17 @@
 	background-position: center center;
 }
 /* FEATURED END */
+/* NEW CATEGORIES START */
+#new-categories{
+  margin: 0px;
+}
+#new-categories .row{
+  margin: 0px;
+}
+#new-categories .nc-title{
+  padding-bottom: 15px;
+}
+#new-categories .nc-item{
+  padding: 0px;
+}
+/* NEW CATEGORIES END */
