@@ -16,32 +16,36 @@
     <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
     <!-- Trang chủ JS -->
     <script src="assets/js/trang-chu.js"></script>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/7cc8dff15d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- container fluid START -->
-    <div id="container-fluid">
+    <div class="container-fluid">
         <!-- navbar START -->
         <div class="row" id="navbar">
             <!-- navbar left START -->
             <div class="col-md-6 text-left" id="navbar-left"><a href="#">MIỄN PHÍ GIAO HÀNG CHO ĐƠN HÀNG TỪ
-                    400K</a></div>
+                    400K</a>
+            </div>
             <!-- navbar left END -->
-
             <!-- navbar right START -->
-            <div class="col-md-6 text-right" id="navbar-right"><a href="#">Tài Khoản</a></div>
+            <div class="col-md-6 text-right" id="navbar-right"><a href="#">Tài Khoản</a>
+            </div>
             <!-- navbar right END -->
         </div>
         <!-- navbar END -->
         <!-- menu-bar START -->
         <div class="row" id="menu-bar">
             <!-- menu-bar-logo START -->
-            <div class="col-md-3 text-left" id="menu-bar-logo"><a href="#">
+            <div class="col-md-2 text-left" id="menu-bar-logo"><a href="#">
                     <span>MIN</span><span>SHOP</span>
-                </a></div>
+                </a>
+            </div>
             <!-- menu-bar-logo END -->
             <!-- menu-bar-list START -->
-            <div class="col-md-6 text-center" id="menu-bar-list">
+            <div class="col-md-4 text-left" id="menu-bar-list">
                 <ul class="list-inline">
                     <li class="list-inline-item"><a href="#">TRANG CHỦ</a></li>
                     <li class="list-inline-item"><a href="#">SẢN PHẨM</a></li>
@@ -50,9 +54,17 @@
                 </ul>
             </div>
             <!-- menu-bar-list END -->
+            <!-- menu-bar-search START -->
+            <div class="col-md-4" id="menu-bar-search">
+                    <form class="form-inline" method="post" id="frm-search">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Type here" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+            </div>
+            <!-- menu-bar-search END -->
             <!-- menu-bar-cart START -->
-            <div class="col-md-3 text-right" id="menu-bar-cart">
-                <a href="#"><img src="assets/imgs/home/shopping-cart.png" width="15%" alt="cart"></a>
+            <div class="col-md-2 text-right" id="menu-bar-cart">
+                <i class="fas fa-shopping-cart"></i>
             </div>
             <!-- menu-bar-cart END -->
         </div>
@@ -165,10 +177,11 @@
                     <div class="col nc-item">
                         <div class="card nc-card" style="width: 18rem;">
                             <img src="assets/imgs/home/item-1.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
+                            <div class="card-body text-center nc-price">
                                 <a href="#" class="card-link">Hoodie (Nâu sẫm)</a>
-                                <p>200.000 đ</p>
-                                <p>270.000 đ</p>
+                                <br>
+                                <span>220.000đ</span>
+                                <span>300.000đ</span> 
                             </div>
                         </div>
                     </div>
@@ -176,11 +189,12 @@
                     <!-- item-2 START -->
                     <div class="col nc-item">
                         <div class="card nc-card" style="width: 18rem;">
-                            <img src="assets/imgs/home/item-1.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <a href="#" class="card-link">Hoodie (Nâu sẫm)</a>
-                                <p>200.000 đ</p>
-                                <p>270.000 đ</p>
+                            <img src="assets/imgs/home/item-2.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center nc-price">
+                                <a href="#" class="card-link">Túi xách thời trang</a>
+                                <br>
+                                <span>300.000đ</span>
+                                <span>570.000đ</span> 
                             </div>
                         </div>
                     </div>
@@ -188,11 +202,12 @@
                     <!-- item-3 START -->
                     <div class="col nc-item">
                         <div class="card nc-card" style="width: 18rem;">
-                            <img src="assets/imgs/home/item-1.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <a href="#" class="card-link">Hoodie (Nâu sẫm)</a>
-                                <p>200.000 đ</p>
-                                <p>270.000 đ</p>
+                            <img src="assets/imgs/home/item-3.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center nc-price">
+                                <a href="#" class="card-link">Sweater (Vàng nghệ)</a>
+                                <br>
+                                <span>120.000đ</span>
+                                <span>230.000đ</span> 
                             </div>
                         </div>
                     </div>
@@ -200,11 +215,12 @@
                     <!-- item-4 START -->
                     <div class="col nc-item">
                         <div class="card nc-card" style="width: 18rem;">
-                            <img src="assets/imgs/home/item-1.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <a href="#" class="card-link">Hoodie (Nâu sẫm)</a>
-                                <p>200.000 đ</p>
-                                <p>270.000 đ</p>
+                            <img src="assets/imgs/home/item-4.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center nc-price">
+                                <a href="#" class="card-link">Túi du lịch</a>
+                                <br>
+                                <span>1.200.000đ</span>
+                                <span>1.300.000đ</span> 
                             </div>
                         </div>
                     </div>
@@ -212,20 +228,89 @@
                     <!-- item-5 START -->
                     <div class="col nc-item">
                         <div class="card nc-card" style="width: 18rem;">
+                            <img src="assets/imgs/home/item-5.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center nc-price">
+                                <a href="#" class="card-link">Giày thời trang</a>
+                                <br>
+                                <span>450.000đ</span>
+                                <span>520.000đ</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-5 END -->
+                </div>
+                <div class="row">
+                    <!-- item-1 START -->
+                    <div class="col nc-item">
+                        <div class="card nc-card" style="width: 18rem;">
                             <img src="assets/imgs/home/item-1.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
+                            <div class="card-body text-center nc-price">
                                 <a href="#" class="card-link">Hoodie (Nâu sẫm)</a>
-                                <p>200.000 đ</p>
-                                <p>270.000 đ</p>
+                                <br>
+                                <span>220.000đ</span>
+                                <span>300.000đ</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-1 END -->
+                    <!-- item-2 START -->
+                    <div class="col nc-item">
+                        <div class="card nc-card" style="width: 18rem;">
+                            <img src="assets/imgs/home/item-2.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center nc-price">
+                                <a href="#" class="card-link">Túi xách thời trang</a>
+                                <br>
+                                <span>300.000đ</span>
+                                <span>570.000đ</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-2 END -->
+                    <!-- item-3 START -->
+                    <div class="col nc-item">
+                        <div class="card nc-card" style="width: 18rem;">
+                            <img src="assets/imgs/home/item-3.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center nc-price">
+                                <a href="#" class="card-link">Sweater (Vàng nghệ)</a>
+                                <br>
+                                <span>120.000đ</span>
+                                <span>230.000đ</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-3 END -->
+                    <!-- item-4 START -->
+                    <div class="col nc-item">
+                        <div class="card nc-card" style="width: 18rem;">
+                            <img src="assets/imgs/home/item-4.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center nc-price">
+                                <a href="#" class="card-link">Túi du lịch</a>
+                                <br>
+                                <span>1.200.000đ</span>
+                                <span>1.300.000đ</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-4 END -->
+                    <!-- item-5 START -->
+                    <div class="col nc-item">
+                        <div class="card nc-card" style="width: 18rem;">
+                            <img src="assets/imgs/home/item-5.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center nc-price">
+                                <a href="#" class="card-link">Giày thời trang</a>
+                                <br>
+                                <span>450.000đ</span>
+                                <span>520.000đ</span> 
                             </div>
                         </div>
                     </div>
                     <!-- item-5 END -->
                 </div>
             </div>
-            <!-- new-categories END -->
         </div>
-        <!-- container fluid END -->
+        <!-- new-categories END -->
+    </div>
+    <!-- container fluid END -->
 </body>
 
 </html>

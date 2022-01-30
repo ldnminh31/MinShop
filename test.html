@@ -1,23 +1,200 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="vendors/jquery/jquery-3.6.0.min.js">
+    <title>Trang chủ</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- JQuery -->
+    <script src="vendors/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="test.css">
+    <!-- Trang chủ CSS -->
+    <link rel="stylesheet" href="assets/css/trang-chu.css">
+    <!-- Bootstrap JS -->
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Trang chủ JS -->
+    <script src="assets/js/trang-chu.js"></script>
 </head>
+
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-4 featured">
-                <button >hello</button>
+        <div class="row" id="navbar">
+            <div class="col-md-6 text-left">
+                <a href="#">ok</a>
             </div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
+            <div class="col-md-6 text-right">
+                <a href="#">ok</a>
+            </div>
         </div>
+        <div class="row" id="banner">
+            <div class="col-md-12">
+                <div id="carouselId" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselId" data-slide-to="1"></li>
+                        <li data-target="#carouselId" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <!-- Banner 1 START -->
+                        <div class="carousel-item active banner-custom">
+                            <div class="jumbotron jumbotron-fluid banner-text">
+                                <div class="container">
+                                    <p class="lead">BỘ SƯU TẬP MÙA THU 2022</p>
+                                    <h1 class="display-3">Giảm giá <br> lên đến 30%</h1>
+                                    <p class="lead">
+                                        <a class="btn btn-primary btn-lg banner-button" href="#" role="button">MUA
+                                            NGAY</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <img src="assets/imgs/home/banner-1.png" alt="First slide">
+                        </div>
+                        <!-- Banner 1 END -->
+                        <!-- Banner 2 START -->
+                        <div class="carousel-item banner-custom">
+                            <div class="jumbotron jumbotron-fluid banner-text">
+                                <div class="container">
+                                    <p class="lead">BỘ SƯU TẬP NAM</p>
+                                    <h1 class="display-3">Giảm giá <br> lên đến 70%</h1>
+                                    <p class="lead">
+                                        <a class="btn btn-primary btn-lg banner-button" href="#" role="button">MUA
+                                            NGAY</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <img src="assets/imgs/home/banner-2.png" alt="Second slide">
+                        </div>
+                        <!-- Banner 2 END -->
+                        <!-- Banner 3 START -->
+                        <div class="carousel-item banner-custom">
+                            <div class="jumbotron jumbotron-fluid banner-text">
+                                <div class="container">
+                                    <p class="lead">BỘ SƯU TẬP MÙA THU 2022</p>
+                                    <h1 class="display-3">Giảm giá <br> lên đến 30%</h1>
+                                    <p class="lead">
+                                        <a class="btn btn-primary btn-lg banner-button" href="#" role="button">MUA
+                                            NGAY</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <img src="assets/imgs/home/banner-1.png" alt="Third slide">
+                        </div>
+                        <!-- Banner 3 END -->
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- banner END -->
+         <!-- featured START -->
+         <div class="row" id="featured">
+            <!-- featured item 1 START -->
+            <div class="col-md-4">
+                <div class="featured-item-1 align-items-center">
+                    <div class="featured-item-link">
+                        <a href="#">women's</a>
+                    </div>
+                </div>
+            </div>
+            <!-- featured item 1 END -->
+            <!-- featured item 2 START -->
+            <div class="col-md-4">
+                <div class="featured-item-2 align-items-center">
+                    <div class="featured-item-link">
+                        <a href="#">ACCESSORIES</a>
+                    </div>
+                </div>
+            </div>
+            <!-- featured item 2 END -->
+            <!-- featured item 3 START -->
+            <div class="col-md-4">
+                <div class="featured-item-3 align-items-center">
+                    <div class="featured-item-link">
+                        <a href="#">MEN'S</a>
+                    </div>
+                </div>
+            </div>
+            <!-- featured item 3 END -->
+        </div>
+        <!-- featured END -->
+        <div class="row" id="new-categories">
+            <div class="col-md-12">
+                <h2 class="text-center nc-title">Sản phẩm mới</h2>
+                <div class="row">
+                    <!-- item-1 START -->
+                    <div class="col nc-item">
+                        <div class="card nc-card" style="width: 18rem;">
+                            <img src="assets/imgs/home/item-1.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <a href="#" class="card-link">Hoodie (Nâu sẫm)</a>
+                                <p>200.000 đ</p>
+                                <p>270.000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-1 END -->
+                    <!-- item-2 START -->
+                    <div class="col nc-item">
+                        <div class="card nc-card" style="width: 18rem;">
+                            <img src="assets/imgs/home/item-1.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <a href="#" class="card-link">Hoodie (Nâu sẫm)</a>
+                                <p>200.000 đ</p>
+                                <p>270.000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-2 END -->
+                    <!-- item-3 START -->
+                    <div class="col nc-item">
+                        <div class="card nc-card" style="width: 18rem;">
+                            <img src="assets/imgs/home/item-1.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <a href="#" class="card-link">Hoodie (Nâu sẫm)</a>
+                                <p>200.000 đ</p>
+                                <p>270.000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-3 END -->
+                    <!-- item-4 START -->
+                    <div class="col nc-item">
+                        <div class="card nc-card" style="width: 18rem;">
+                            <img src="assets/imgs/home/item-1.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <a href="#" class="card-link">Hoodie (Nâu sẫm)</a>
+                                <p>200.000 đ</p>
+                                <p>270.000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-4 END -->
+                    <!-- item-5 START -->
+                    <div class="col nc-item">
+                        <div class="card nc-card" style="width: 18rem;">
+                            <img src="assets/imgs/home/item-1.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <a href="#" class="card-link">Hoodie (Nâu sẫm)</a>
+                                <p>200.000 đ</p>
+                                <p>270.000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-5 END -->
+                </div>
+            </div>
+        </div>
+        <!-- new-categories END -->
     </div>
 </body>
+
 </html>

@@ -60,20 +60,53 @@
 #menu-bar-list {
   padding: 20px 0px 0px 0px;
   box-sizing: border-box;
+  padding-left: 20px;
 }
 #menu-bar-list ul li a {
   box-sizing: border-box;
   color: #7d84b2;
-  margin-right: 60px;
+  margin-left: 40px;
 }
 #menu-bar-list ul li a:hover {
   text-decoration: none;
+}
+#menu-bar-search{
+  padding-top: 15px;
+  padding-left: 100px;
+}
+#menu-bar-search #frm-search input{
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+#menu-bar-search #frm-search button{
+  color: #a0ca44;
+  border-color: #a0ca44;
+}
+#menu-bar-search #frm-search button:hover{
+  border: none;
+  background-color: forestgreen;
+  color: white;
 }
 #menu-bar-cart {
   box-sizing: border-box;
   padding: 0px;
   padding-top: 5px;
   padding-right: 60px;
+}
+.search-box i{
+  height: 100%;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#menu-bar-cart i{
+  color: #404987;
+  padding-top: 15px;
+  font-size: 2rem;
 }
 /* MENUBAR END */
 
@@ -168,11 +201,28 @@
 }
 #new-categories .row{
   margin: 0px;
+  margin-bottom: 20px;
 }
 #new-categories .nc-title{
   padding-bottom: 15px;
+  color: #404987;
 }
 #new-categories .nc-item{
   padding: 0px;
+}
+.nc-price a{
+  font-size: 1.2rem;
+  color: #404987;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.nc-price span:first-of-type{
+  font-size: 1.2rem;
+  color: #a0ca44;
+  margin-right: 15px;
+}
+.nc-price span:last-of-type{
+  text-decoration: line-through;
+  color: grey;
 }
 /* NEW CATEGORIES END */
