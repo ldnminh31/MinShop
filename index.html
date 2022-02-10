@@ -6,18 +6,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- JQuery -->
-    <script src="vendors/jquery/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
     <!-- Trang chủ CSS -->
     <link rel="stylesheet" href="assets/css/trang-chu.css">
-    <!-- Bootstrap JS -->
-    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Trang chủ JS -->
-    <script src="assets/js/trang-chu.js"></script>
-    <!-- Font awesome -->
-    <script src="https://kit.fontawesome.com/7cc8dff15d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -56,15 +48,15 @@
             <!-- menu-bar-list END -->
             <!-- menu-bar-search START -->
             <div class="col-md-4" id="menu-bar-search">
-                    <form class="form-inline" method="post" id="frm-search">
-                      <input class="form-control mr-sm-2" type="search" placeholder="Type here" aria-label="Search">
-                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+                <form class="form-inline" method="post" id="frm-search">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Type here" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
             </div>
             <!-- menu-bar-search END -->
             <!-- menu-bar-cart START -->
             <div class="col-md-2 text-right" id="menu-bar-cart">
-                <i class="fas fa-shopping-cart"></i>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
             </div>
             <!-- menu-bar-cart END -->
         </div>
@@ -81,12 +73,12 @@
                     <div class="carousel-inner" role="listbox">
                         <!-- Banner 1 START -->
                         <div class="carousel-item active banner-custom">
-                            <div class="jumbotron jumbotron-fluid banner-text">
-                                <div class="container">
+                            <div class="banner-text">
+                                <div class="container banner-wrapper">
                                     <p class="lead">BỘ SƯU TẬP MÙA THU 2022</p>
                                     <h1 class="display-3">Giảm giá <br> lên đến 30%</h1>
                                     <p class="lead">
-                                        <a class="btn btn-primary btn-lg banner-button" href="#" role="button">MUA
+                                        <a class="btn btn-primary btn-lg" id="banner-button" href="#" role="button">MUA
                                             NGAY</a>
                                     </p>
                                 </div>
@@ -96,12 +88,12 @@
                         <!-- Banner 1 END -->
                         <!-- Banner 2 START -->
                         <div class="carousel-item banner-custom">
-                            <div class="jumbotron jumbotron-fluid banner-text">
-                                <div class="container">
+                            <div class="banner-text">
+                                <div class="container banner-wrapper">
                                     <p class="lead">BỘ SƯU TẬP NAM</p>
                                     <h1 class="display-3">Giảm giá <br> lên đến 70%</h1>
                                     <p class="lead">
-                                        <a class="btn btn-primary btn-lg banner-button" href="#" role="button">MUA
+                                        <a class="btn btn-primary btn-lg" id="banner-button" href="#" role="button">MUA
                                             NGAY</a>
                                     </p>
                                 </div>
@@ -111,12 +103,12 @@
                         <!-- Banner 2 END -->
                         <!-- Banner 3 START -->
                         <div class="carousel-item banner-custom">
-                            <div class="jumbotron jumbotron-fluid banner-text">
-                                <div class="container">
+                            <div class="banner-text">
+                                <div class="container banner-wrapper">
                                     <p class="lead">BỘ SƯU TẬP MÙA THU 2022</p>
                                     <h1 class="display-3">Giảm giá <br> lên đến 30%</h1>
                                     <p class="lead">
-                                        <a class="btn btn-primary btn-lg banner-button" href="#" role="button">MUA
+                                        <a class="btn btn-primary btn-lg" id="banner-button" href="#" role="button">MUA
                                             NGAY</a>
                                     </p>
                                 </div>
@@ -172,6 +164,7 @@
         <div class="row" id="new-categories">
             <div class="col-md-12">
                 <h2 class="text-center nc-title">Sản phẩm mới</h2>
+                <hr class="green-line">
                 <div class="row">
                     <!-- item-1 START -->
                     <div class="col nc-item">
@@ -181,7 +174,7 @@
                                 <a href="#" class="card-link">Hoodie (Nâu sẫm)</a>
                                 <br>
                                 <span>220.000đ</span>
-                                <span>300.000đ</span> 
+                                <span>300.000đ</span>
                             </div>
                         </div>
                     </div>
@@ -194,7 +187,7 @@
                                 <a href="#" class="card-link">Túi xách thời trang</a>
                                 <br>
                                 <span>300.000đ</span>
-                                <span>570.000đ</span> 
+                                <span>570.000đ</span>
                             </div>
                         </div>
                     </div>
@@ -207,7 +200,7 @@
                                 <a href="#" class="card-link">Sweater (Vàng nghệ)</a>
                                 <br>
                                 <span>120.000đ</span>
-                                <span>230.000đ</span> 
+                                <span>230.000đ</span>
                             </div>
                         </div>
                     </div>
@@ -220,7 +213,7 @@
                                 <a href="#" class="card-link">Túi du lịch</a>
                                 <br>
                                 <span>1.200.000đ</span>
-                                <span>1.300.000đ</span> 
+                                <span>1.300.000đ</span>
                             </div>
                         </div>
                     </div>
@@ -233,7 +226,7 @@
                                 <a href="#" class="card-link">Giày thời trang</a>
                                 <br>
                                 <span>450.000đ</span>
-                                <span>520.000đ</span> 
+                                <span>520.000đ</span>
                             </div>
                         </div>
                     </div>
@@ -248,7 +241,7 @@
                                 <a href="#" class="card-link">Hoodie (Nâu sẫm)</a>
                                 <br>
                                 <span>220.000đ</span>
-                                <span>300.000đ</span> 
+                                <span>300.000đ</span>
                             </div>
                         </div>
                     </div>
@@ -261,7 +254,7 @@
                                 <a href="#" class="card-link">Túi xách thời trang</a>
                                 <br>
                                 <span>300.000đ</span>
-                                <span>570.000đ</span> 
+                                <span>570.000đ</span>
                             </div>
                         </div>
                     </div>
@@ -274,7 +267,7 @@
                                 <a href="#" class="card-link">Sweater (Vàng nghệ)</a>
                                 <br>
                                 <span>120.000đ</span>
-                                <span>230.000đ</span> 
+                                <span>230.000đ</span>
                             </div>
                         </div>
                     </div>
@@ -287,7 +280,7 @@
                                 <a href="#" class="card-link">Túi du lịch</a>
                                 <br>
                                 <span>1.200.000đ</span>
-                                <span>1.300.000đ</span> 
+                                <span>1.300.000đ</span>
                             </div>
                         </div>
                     </div>
@@ -300,7 +293,7 @@
                                 <a href="#" class="card-link">Giày thời trang</a>
                                 <br>
                                 <span>450.000đ</span>
-                                <span>520.000đ</span> 
+                                <span>520.000đ</span>
                             </div>
                         </div>
                     </div>
@@ -309,8 +302,120 @@
             </div>
         </div>
         <!-- new-categories END -->
+        <!-- banner-timeout START -->
+        <div class="row" id="banner-timeout">
+            <div class="col-md-6">
+                <div class="banner-timeout-img">
+                    <img src="assets/imgs/home/banner-timeout.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="deal_ofthe_week_content d-flex flex-column align-items-center float-right">
+                    <div class="section_title text-center">
+                        <h2>Deal tốt nhất tuần</h2>
+                    </div>
+                    <div class="timer-container">
+                        <ul class="timer">
+                            <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                                <div id="day" class="timer_num">03</div>
+                                <div class="timer_unit">Day</div>
+                            </li>
+                            <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                                <div id="hour" class="timer_num">15</div>
+                                <div class="timer_unit">Hours</div>
+                            </li>
+                            <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                                <div id="minute" class="timer_num">45</div>
+                                <div class="timer_unit">Mins</div>
+                            </li>
+                            <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                                <div id="second" class="timer_num">23</div>
+                                <div class="timer_unit">Sec</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="red_button deal_ofthe_week_button"><a href="#">shop now</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- banner-timeout END -->
+        <!-- favorite-items START -->
+        <div class="row" id="favorite-items">
+            <div class="col">
+                <h1 class="text-center">Sản phẩm bán chạy</h1>
+                <hr class="green-line">
+                <div class="card fi-wrapper" style="width: 18rem;">
+                    <img src="assets/imgs/home/item-2.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center fi-wrapper">
+                        <a href="#" class="card-link">Túi xách thời trang</a>
+                        <br>
+                        <span>300.000đ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- favorite-items END -->
+        <!-- contact-form START -->
+        <div class="row" id="contact-form">
+            <div class="col-md-12">
+                <div class="cf-container">
+                    <div class="content">
+                        <div class="left-side">
+                            <div class="address details">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="topic">Địa chỉ</div>
+                                <div class="text-one">Trần Hưng Đạo</div>
+                                <div class="text-two">Bitexco, lầu 06</div>
+                            </div>
+                            <div class="phone details">
+                                <i class="fas fa-phone-alt"></i>
+                                <div class="topic">Số điện thoại</div>
+                                <div class="text-one">+098 989 5647</div>
+                                <div class="text-two">+096 343 5678</div>
+                            </div>
+                            <div class="email details">
+                                <i class="fas fa-envelope"></i>
+                                <div class="topic">Email</div>
+                                <div class="text-one">minshop@gmail.com</div>
+                                <div class="text-two">info.minshop@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <div class="topic-text">Liên lạc với chúng tôi</div>
+                            <p>Nếu như bạn có đánh giá, đóng góp về cửa hàng chúng tôi, đừng ngần ngại và hãy để lại
+                                phản hồi, chúng tôi rất trân trọng ý kiến và cảm ơn sự đóng góp của bạn.</p>
+                            <form action="#">
+                                <div class="input-box">
+                                    <input type="text" placeholder="Tên của bạn">
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" placeholder="Email của bạn">
+                                </div>
+                                <div class="input-box message-box">
+                                    <input type="text" placeholder="Nội dung">
+                                </div>
+                                <div class="button">
+                                    <input type="button" value="Gửi">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contact-form END -->
+        </div>
     </div>
     <!-- container fluid END -->
+
+
+    <!-- JQuery -->
+    <script src="vendors/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/7cc8dff15d.js" crossorigin="anonymous"></script>
+    <!-- Trang chủ JS -->
+    <script src="assets/js/trang-chu.js"></script>
 </body>
 
 </html>
