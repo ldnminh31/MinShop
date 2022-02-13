@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <!-- Ionic Framework CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Trang chủ CSS -->
     <link rel="stylesheet" href="assets/css/trang-chu.css">
 </head>
@@ -31,7 +33,7 @@
         <!-- menu-bar START -->
         <div class="row" id="menu-bar">
             <!-- menu-bar-logo START -->
-            <div class="col-md-2 text-left" id="menu-bar-logo"><a href="#">
+            <div class="col-md-2 text-left" id="menu-bar-logo"><a href="index.html">
                     <span>MIN</span><span>SHOP</span>
                 </a>
             </div>
@@ -39,7 +41,7 @@
             <!-- menu-bar-list START -->
             <div class="col-md-4 text-left" id="menu-bar-list">
                 <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#">TRANG CHỦ</a></li>
+                    <li class="list-inline-item"><a href="index.html">TRANG CHỦ</a></li>
                     <li class="list-inline-item"><a href="#">SẢN PHẨM</a></li>
                     <li class="list-inline-item"><a href="#">GIỚI THIỆU</a></li>
                     <li class="list-inline-item"><a href="#">LIÊN HỆ</a></li>
@@ -49,8 +51,8 @@
             <!-- menu-bar-search START -->
             <div class="col-md-4" id="menu-bar-search">
                 <form class="form-inline" method="post" id="frm-search">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Type here" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <input class="form-control mr-sm-2" type="search" placeholder="Nhập sản phẩm cần tìm" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
                 </form>
             </div>
             <!-- menu-bar-search END -->
@@ -105,15 +107,15 @@
                         <div class="carousel-item banner-custom">
                             <div class="banner-text">
                                 <div class="container banner-wrapper">
-                                    <p class="lead">BỘ SƯU TẬP MÙA THU 2022</p>
-                                    <h1 class="display-3">Giảm giá <br> lên đến 30%</h1>
+                                    <p class="lead">BỘ SƯU TẬP FRIENDS</p>
+                                    <h1 class="display-3">Phiên bản <br> giới hạn</h1>
                                     <p class="lead">
                                         <a class="btn btn-primary btn-lg" id="banner-button" href="#" role="button">MUA
                                             NGAY</a>
                                     </p>
                                 </div>
                             </div>
-                            <img src="assets/imgs/home/banner-1.png" alt="Third slide">
+                            <img src="assets/imgs/home/banner-3.png" alt="Third slide">
                         </div>
                         <!-- Banner 3 END -->
                     </div>
@@ -169,7 +171,7 @@
                     <!-- item-1 START -->
                     <div class="col nc-item">
                         <div class="card nc-card" style="width: 18rem;">
-                            <img src="assets/imgs/home/item-1.png" class="card-img-top" alt="...">
+                            <a href="#"><img src="assets/imgs/home/item-1.png" class="card-img-top before" alt="..."></a>
                             <div class="card-body text-center nc-price">
                                 <a href="#" class="card-link">Hoodie (Nâu sẫm)</a>
                                 <br>
@@ -182,7 +184,7 @@
                     <!-- item-2 START -->
                     <div class="col nc-item">
                         <div class="card nc-card" style="width: 18rem;">
-                            <img src="assets/imgs/home/item-2.png" class="card-img-top" alt="...">
+                            <a href="#"><img src="assets/imgs/home/item-2.png" class="card-img-top" alt="..."></a>
                             <div class="card-body text-center nc-price">
                                 <a href="#" class="card-link">Túi xách thời trang</a>
                                 <br>
@@ -195,7 +197,7 @@
                     <!-- item-3 START -->
                     <div class="col nc-item">
                         <div class="card nc-card" style="width: 18rem;">
-                            <img src="assets/imgs/home/item-3.png" class="card-img-top" alt="...">
+                            <a href="#"><img src="assets/imgs/home/item-3.png" class="card-img-top" alt="..."></a>
                             <div class="card-body text-center nc-price">
                                 <a href="#" class="card-link">Sweater (Vàng nghệ)</a>
                                 <br>
@@ -208,7 +210,7 @@
                     <!-- item-4 START -->
                     <div class="col nc-item">
                         <div class="card nc-card" style="width: 18rem;">
-                            <img src="assets/imgs/home/item-4.png" class="card-img-top" alt="...">
+                            <a href="#"><img src="assets/imgs/home/item-4.png" class="card-img-top" alt="..."></a>
                             <div class="card-body text-center nc-price">
                                 <a href="#" class="card-link">Túi du lịch</a>
                                 <br>
@@ -221,7 +223,7 @@
                     <!-- item-5 START -->
                     <div class="col nc-item">
                         <div class="card nc-card" style="width: 18rem;">
-                            <img src="assets/imgs/home/item-5.png" class="card-img-top" alt="...">
+                            <a href="#"><img src="assets/imgs/home/item-5.png" class="card-img-top" alt="..."></a>
                             <div class="card-body text-center nc-price">
                                 <a href="#" class="card-link">Giày thời trang</a>
                                 <br>
@@ -236,7 +238,7 @@
                     <!-- item-1 START -->
                     <div class="col nc-item">
                         <div class="card nc-card" style="width: 18rem;">
-                            <img src="assets/imgs/home/item-1.png" class="card-img-top" alt="...">
+                            <a href="#"><img src="assets/imgs/home/item-1.png" class="card-img-top" alt="..."></a>
                             <div class="card-body text-center nc-price">
                                 <a href="#" class="card-link">Hoodie (Nâu sẫm)</a>
                                 <br>
@@ -249,7 +251,7 @@
                     <!-- item-2 START -->
                     <div class="col nc-item">
                         <div class="card nc-card" style="width: 18rem;">
-                            <img src="assets/imgs/home/item-2.png" class="card-img-top" alt="...">
+                            <a href="#"><img src="assets/imgs/home/item-2.png" class="card-img-top" alt="..."></a>
                             <div class="card-body text-center nc-price">
                                 <a href="#" class="card-link">Túi xách thời trang</a>
                                 <br>
@@ -262,7 +264,7 @@
                     <!-- item-3 START -->
                     <div class="col nc-item">
                         <div class="card nc-card" style="width: 18rem;">
-                            <img src="assets/imgs/home/item-3.png" class="card-img-top" alt="...">
+                            <a href="#"><img src="assets/imgs/home/item-3.png" class="card-img-top" alt="..."></a>
                             <div class="card-body text-center nc-price">
                                 <a href="#" class="card-link">Sweater (Vàng nghệ)</a>
                                 <br>
@@ -275,7 +277,7 @@
                     <!-- item-4 START -->
                     <div class="col nc-item">
                         <div class="card nc-card" style="width: 18rem;">
-                            <img src="assets/imgs/home/item-4.png" class="card-img-top" alt="...">
+                            <a href="#"><img src="assets/imgs/home/item-4.png" class="card-img-top" alt="..."></a>
                             <div class="card-body text-center nc-price">
                                 <a href="#" class="card-link">Túi du lịch</a>
                                 <br>
@@ -288,7 +290,7 @@
                     <!-- item-5 START -->
                     <div class="col nc-item">
                         <div class="card nc-card" style="width: 18rem;">
-                            <img src="assets/imgs/home/item-5.png" class="card-img-top" alt="...">
+                            <a href="#"><img src="assets/imgs/home/item-5.png" class="card-img-top" alt="..."></a>
                             <div class="card-body text-center nc-price">
                                 <a href="#" class="card-link">Giày thời trang</a>
                                 <br>
@@ -353,6 +355,7 @@
             </div>
         </div>
         <!-- favorite-items END -->
+        <hr> 
         <!-- contact-form START -->
         <div class="row" id="contact-form">
             <div class="col-md-12">
@@ -404,10 +407,22 @@
         </div>
         <!-- footer START -->
         <div class="row" id="footer">
-            <div class="col-md-6">
-                
+            <div class="col-md-12">
+                <footer>
+                    <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
+                                class="icon ion-social-snapchat"></i></a><a href="#"><i
+                                class="icon ion-social-twitter"></i></a><a href="#"><i
+                                class="icon ion-social-facebook"></i></a></div>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="index.html">Trang chủ</a></li>
+                        <li class="list-inline-item"><a href="#">Dịch vụ</a></li>
+                        <li class="list-inline-item"><a href="#">Về chúng tôi</a></li>
+                        <li class="list-inline-item"><a href="#">Điều khoản sử dụng</a></li>
+                        <li class="list-inline-item"><a href="#">Chính sách quyền riêng tư</a></li>
+                    </ul>
+                    <p class="copyright">MINSHOP © 2022</p>
+                </footer>
             </div>
-            <div class="col-md-6"></div>
         </div>
         <!-- footer END -->
     </div>

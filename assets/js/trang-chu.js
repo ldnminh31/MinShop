@@ -2,6 +2,8 @@ $(function () {
   $(".carousel").carousel({
     interval: 4000,
   });
+  
+
   initTimer();
   function initTimer() {
     if ($(".timer").length) {
@@ -45,4 +47,5 @@ $(function () {
       }, 1000);
     }
   }
+
 });

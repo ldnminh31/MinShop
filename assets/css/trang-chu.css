@@ -50,6 +50,7 @@
   text-decoration: none;
 }
 /* MENUBAR START */
+
 #menu-bar-logo {
   padding: 0px;
   padding-left: 50px;
@@ -76,13 +77,21 @@
 }
 #menu-bar-list ul li a:hover {
   text-decoration: none;
+  color: #afafb6;
 }
 #menu-bar-search{
   padding-top: 15px;
   padding-left: 100px;
 }
+#menu-bar-search input{
+  border: none;
+}
+#menu-bar-search input:hover, button:hover{
+  border: none;
+}
+
 #menu-bar-search #frm-search input{
-  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
 }
 #menu-bar-search #frm-search button{
   color: #a0ca44;
@@ -139,6 +148,10 @@
   background-color: #a0ca44;
   color: #404987;
 }
+#banner-button:hover{
+  background-color:#5c8505;
+  color: #f9f9ed;
+}
 .banner-wrapper{
   background-color: #f9f9ed;
 }
@@ -182,6 +195,7 @@
 }
 .featured-item-link a:hover{
   text-decoration: none;
+  color: #a0ca44;
 }
 .featured-item-2{
   background-image: url(/assets/imgs/home/featured-2.jpg);
@@ -221,11 +235,16 @@
 #new-categories .nc-item{
   padding: 0px;
 }
+
+
 .nc-price a{
   font-size: 1.2rem;
   color: #404987;
   margin-bottom: 5px;
   font-weight: 700;
+}
+.nc-price a:hover{
+  color: #7d84b2;
 }
 .nc-price span:first-of-type{
   font-size: 1.2rem;
@@ -259,6 +278,7 @@
   align-content: normal;
 }
 .bt-title{
+  text-align: center;
   color: #404987;
   display: block;
   flex-grow: 0;
@@ -334,6 +354,9 @@
 #favorite-items .fi-wrapper a{
   color: #404987;
   font-size: 1.3rem;
+}
+#favorite-items .fi-wrapper a:hover{
+  color: #7d84b2;
 }
 #favorite-items .fi-wrapper{
   color:#a0ca44;
@@ -479,5 +502,59 @@
 }
 /* CONTACT FORM END */
 /* FOOTER START */
+#footer{
+  padding: 40px 0px;
+  background-color: #404987;
+  color: #f9f9ed;
+}
+#footer ul{
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0px;
+}
+#footer li{
+  padding: 0px 10px;
+}
+#footer ul a{
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+#footer ul a:hover {
+  opacity:1;
+}
 
+#footer .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+#footer .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+#footer .social > a:hover {
+  opacity:0.9;
+}
+
+#footer .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
 /* FOOTER END */
