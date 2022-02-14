@@ -20,8 +20,19 @@
         <!-- navbar START -->
         <div class="row" id="navbar">
             <!-- navbar left START -->
-            <div class="col-md-6 text-left" id="navbar-left"><a href="#">MIỄN PHÍ GIAO HÀNG CHO ĐƠN HÀNG TỪ
+            <div class="col-md-6 text-left" id="navbar-left">
+                <a href="#" class="openModal">MIỄN PHÍ GIAO HÀNG CHO ĐƠN HÀNG TỪ
                     400K</a>
+            </div>
+            <div class="modal">
+                <div class="modal-box">
+                    <!-- Content -->
+                    <img src="assets/imgs/home/CTKM.png" alt="">
+                    <!-- Close -->
+                    <span class="closeModal">
+                        <ion-icon name="close-circle-outline"></ion-icon>
+                    </span>
+                </div>
             </div>
             <!-- navbar left END -->
             <!-- navbar right START -->
@@ -51,7 +62,8 @@
             <!-- menu-bar-search START -->
             <div class="col-md-4" id="menu-bar-search">
                 <form class="form-inline" method="post" id="frm-search">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Nhập sản phẩm cần tìm" aria-label="Search">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Nhập sản phẩm cần tìm"
+                        aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
                 </form>
             </div>
@@ -67,11 +79,6 @@
         <div class="row" id="banner">
             <div class="col-md-12">
                 <div id="carouselId" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselId" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselId" data-slide-to="1"></li>
-                        <li data-target="#carouselId" data-slide-to="2"></li>
-                    </ol>
                     <div class="carousel-inner" role="listbox">
                         <!-- Banner 1 START -->
                         <div class="carousel-item active banner-custom">
@@ -171,7 +178,8 @@
                     <!-- item-1 START -->
                     <div class="col nc-item">
                         <div class="card nc-card" style="width: 18rem;">
-                            <a href="#"><img src="assets/imgs/home/item-1.png" class="card-img-top before" alt="..."></a>
+                            <a href="#"><img src="assets/imgs/home/item-1.png" class="card-img-top before"
+                                    alt="..."></a>
                             <div class="card-body text-center nc-price">
                                 <a href="#" class="card-link">Hoodie (Nâu sẫm)</a>
                                 <br>
@@ -355,7 +363,7 @@
             </div>
         </div>
         <!-- favorite-items END -->
-        <hr> 
+        <hr>
         <!-- contact-form START -->
         <div class="row" id="contact-form">
             <div class="col-md-12">
@@ -433,6 +441,9 @@
     <script src="vendors/jquery/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <!-- ionic icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/7cc8dff15d.js" crossorigin="anonymous"></script>
     <!-- Trang chủ JS -->

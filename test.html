@@ -1,13 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <!-- <title>Custom Modal Box | CodingNepal</title> -->
+    <link rel="stylesheet" href="test.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
+
 <body>
-    <h1 style="text-align: center;">Duong map djt</h1>
-    <img src="https://scontent.fsgn5-11.fna.fbcdn.net/v/t39.30808-6/272958852_1976299919206762_6544002108536104848_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=n3wClgMJGtcAX8bKoZ_&_nc_ht=scontent.fsgn5-11.fna&oh=00_AT-tsy8bcCDkyQR-nGZRCbugiqikuVJZ02EM93xkgRl_oQ&oe=61FF2EFE" width="100%" alt="" srcset="">
+    <div class="show-btn">
+        <button>Show Modal</button>
+    </div>
+    <div class="modal">
+        <div class="top-content">
+            <div class="left-text">
+                Modal Box
+            </div>
+            <span class="close-icon"><i class="fas fa-times"></i></span>
+            <div class="fas fa-camera-retro"></div>
+        </div>
+        <div class="bottom-content">
+            <div class="text">
+                Custom Modal Box
+            </div>
+            <p>
+                Create a simple modal box using html and css only.
+            </p>
+            <div class="close-btn">
+                <button>Close Modal</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.show-btn').click(function () {
+            $('.modal').toggleClass("show");
+            $('.show-btn').addClass("disabled");
+        });
+        $('.close-icon').click(function () {
+            $('.modal').toggleClass("show");
+            $('.show-btn').removeClass("disabled");
+        });
+        $('.close-btn').click(function () {
+            $('.modal').toggleClass("show");
+            $('.show-btn').removeClass("disabled");
+        });
+    </script>
 </body>
+
 </html>

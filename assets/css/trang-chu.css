@@ -49,6 +49,52 @@
 #navbar a:hover {
   text-decoration: none;
 }
+#navbar-left .openModal:hover{
+  color: #d7f39b;
+}
+#navbar-right a:hover{
+  color: #d7f39b;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.modal-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+  color: #fff;
+  margin: auto;
+  padding: 0px;
+  transition: 10.5s;
+  font-size: 20px;
+  text-align: center;
+}
+.modal-box img{
+  width: 100%;
+  box-sizing: border-box;
+}
+.modal-box .closeModal {
+  cursor: pointer;
+}
+
+.modal-box .closeModal:hover {
+  color: #f9f9ed;
+}
+
+
+
 /* MENUBAR START */
 
 #menu-bar-logo {

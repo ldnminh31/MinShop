@@ -1,9 +1,30 @@
 $(function () {
+  // carosel
   $(".carousel").carousel({
     interval: 4000,
   });
-  
+  // modal
+  var modal = document.getElementsByClassName("modal")[0];
+  var modalBox = document.getElementsByClassName("modal-box")[0];
 
+  var open = document.getElementsByClassName("openModal")[0];
+  var close = document.getElementsByClassName("closeModal")[0];
+
+  open.onclick = function () {
+    modal.style.display = "block";
+  };
+
+  close.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  window.onclick = function (e) {
+    if (e.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+
+  // timer
   initTimer();
   function initTimer() {
     if ($(".timer").length) {
@@ -47,5 +68,4 @@ $(function () {
       }, 1000);
     }
   }
-
 });
