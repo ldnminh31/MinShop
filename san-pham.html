@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sản phẩm</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <!-- Ionic Framework CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Trang chủ CSS -->
+    <link rel="stylesheet" href="assets/css/san-pham.css">
 </head>
+
 <body>
-    
+    <!-- menu start -->
+    <div class="container-fluid">
+        <div class="row" id="menu-bar">
+            <!-- menu-bar-logo START -->
+            <div class="col-md-2 text-left" id="menu-bar-logo"><a href="index.html">
+                    <span>MIN</span><span>SHOP</span>
+                </a>
+            </div>
+            <!-- menu-bar-logo END -->
+            <!-- menu-bar-list START -->
+            <div class="col-md-4 text-left" id="menu-bar-list">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="index.html">TRANG CHỦ</a></li>
+                    <li class="list-inline-item"><a href="#">SẢN PHẨM</a></li>
+                    <li class="list-inline-item"><a href="#">GIỚI THIỆU</a></li>
+                    <li class="list-inline-item"><a href="#">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+            <!-- menu-bar-list END -->
+            <!-- menu-bar-search START -->
+            <div class="col-md-4" id="menu-bar-search">
+                <form class="form-inline" method="post" id="frm-search">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Nhập sản phẩm cần tìm"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+                </form>
+            </div>
+            <!-- menu-bar-search END -->
+            <!-- menu-bar-cart START -->
+            <div class="col-md-2 text-right" id="menu-bar-cart">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <!-- menu-bar-cart END -->
+        </div>
+    </div>
+    </div>
+    <!-- menu end -->
+    <!-- JQuery -->
+    <script src="vendors/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <!-- ionic icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/7cc8dff15d.js" crossorigin="anonymous"></script>
+    <!-- Trang chủ JS -->
+    <script src="assets/js/trang-chu.js"></script>
 </body>
+
 </html>
