@@ -11,47 +11,91 @@
     <!-- Ionic Framework CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Trang chủ CSS -->
+    <link rel="stylesheet" href="assets/css/trang-chu.css">
+    <!-- Products CSS -->
     <link rel="stylesheet" href="assets/css/san-pham.css">
 </head>
 
 <body>
-    <!-- menu start -->
+    <!-- container start -->
     <div class="container-fluid">
-        <div class="row" id="menu-bar">
-            <!-- menu-bar-logo START -->
-            <div class="col-md-2 text-left" id="menu-bar-logo"><a href="index.html">
-                    <span>MIN</span><span>SHOP</span>
-                </a>
+        <!-- navbar START -->
+        <div class="row" id="navbar">
+            <!-- navbar left START -->
+            <div class="col-md-6 text-left" id="navbar-left">
+                <a href="#" class="openModal">MIỄN PHÍ GIAO HÀNG CHO ĐƠN HÀNG TỪ
+                    400K</a>
             </div>
-            <!-- menu-bar-logo END -->
-            <!-- menu-bar-list START -->
-            <div class="col-md-4 text-left" id="menu-bar-list">
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="index.html">TRANG CHỦ</a></li>
-                    <li class="list-inline-item"><a href="#">SẢN PHẨM</a></li>
-                    <li class="list-inline-item"><a href="#">GIỚI THIỆU</a></li>
-                    <li class="list-inline-item"><a href="#">LIÊN HỆ</a></li>
-                </ul>
+            <div class="modal">
+                <div class="modal-box">
+                    <!-- Content -->
+                    <img src="assets/imgs/home/CTKM.png" alt="">
+                    <!-- Close -->
+                    <span class="closeModal">
+                        <ion-icon name="close-circle-outline"></ion-icon>
+                    </span>
+                </div>
             </div>
-            <!-- menu-bar-list END -->
-            <!-- menu-bar-search START -->
-            <div class="col-md-4" id="menu-bar-search">
-                <form class="form-inline" method="post" id="frm-search">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Nhập sản phẩm cần tìm"
-                        aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
-                </form>
+            <!-- navbar left END -->
+            <!-- navbar right START -->
+            <div class="col-md-6 text-right" id="navbar-right"><a href="tai-khoan.html">Tài Khoản</a>
             </div>
-            <!-- menu-bar-search END -->
-            <!-- menu-bar-cart START -->
-            <div class="col-md-2 text-right" id="menu-bar-cart">
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-            </div>
-            <!-- menu-bar-cart END -->
+            <!-- navbar right END -->
         </div>
+        <!-- navbar END -->
+        <!-- logo-bar START -->
+        <div class="row" id="logo-bar">
+            <div class="col-md-12 lg-img">
+                <a href="index.html"><img src="assets/imgs/company/logo-medium.png" alt=""></a>
+            </div>
+        </div>
+        <!-- logo-bar END -->
+        <!-- menu-bar START -->
+        <div class="row">
+            <div class="col-md-12" id="menu-bar">
+                <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="ftco-nav">
+                            <ul class="navbar-nav m-auto" id="mb-list">
+                                <li class="nav-item active"><a href="index.html" class="nav-link">Trang chủ</a></li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <button class="nut_dropdown">Sản phẩm</button>
+                                        <div class="noidung_dropdown">
+                                            <a href="san-pham.html">Tất cả sản phẩm</a>
+                                            <a href="#">Nam</a>
+                                            <a href="#">Nữ</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="#" class="nav-link">Giới thiệu</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- menu-bar END -->
+        <h1>ok</h1>
+        <h1>ok</h1>
+        <h1>ok</h1>
+        <h1>ok</h1>
+        <h1>ok</h1>
+        <h1>ok</h1>
+        <h1>ok</h1>
+        <h1>ok</h1>
+        <h1>ok</h1>
+        <h1>ok</h1>
+        <h1>ok</h1>
+        <h1>ok</h1>
+        <h1>ok</h1>
+        <h1>ok</h1>
+        <h1>ok</h1>
+        <h1>ok</h1>
+        <h1>ok</h1>
     </div>
-    </div>
-    <!-- menu end -->
+    <!-- container end -->
     <!-- JQuery -->
     <script src="vendors/jquery/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap JS -->

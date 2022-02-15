@@ -44,7 +44,7 @@
 }
 #navbar a {
   font-family: ProductSans;
-  color: #f9f9ed;
+  color: #FFFFFF;
 }
 #navbar a:hover {
   text-decoration: none;
@@ -73,8 +73,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  
-  color: #fff;
+  color: #FFFFFF;
   margin: auto;
   padding: 0px;
   transition: 10.5s;
@@ -93,85 +92,71 @@
   color: #f9f9ed;
 }
 
-
-
-/* MENUBAR START */
-
-#menu-bar-logo {
+/* LOGO START */
+.lg-img{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: normal;
+  height: 100px;
+}
+#logo-bar .lg-img img{
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+/* LOGO END */
+/* MENU BAR START */
+#menu-bar{
   padding: 0px;
-  padding-left: 50px;
-  font-size: 3rem;
 }
-#menu-bar-logo a:hover {
-  text-decoration: none;
+#mb-list li{
+  margin: 0px 20px;
 }
-#menu-bar-logo a span:first-child {
-  color: #7d84b2;
+.bg-dark{
+  background-color: #404987!important;
 }
-#menu-bar-logo a span:last-child {
-  color: #a0ca44;
-}
-#menu-bar-list {
-  padding: 20px 0px 0px 0px;
-  box-sizing: border-box;
-  padding-left: 20px;
-}
-#menu-bar-list ul li a {
-  box-sizing: border-box;
-  color: #7d84b2;
-  margin-left: 20px;
-}
-#menu-bar-list ul li a:hover {
-  text-decoration: none;
-  color: #afafb6;
-}
-#menu-bar-search{
-  padding-top: 15px;
-  padding-left: 100px;
-}
-#menu-bar-search input{
+/* Nút Dropdown*/
+.nut_dropdown {
+  padding-top: 8px;
+  background-color: inherit;
   border: none;
-}
-#menu-bar-search input:hover, button:hover{
-  border: none;
+  color: rgba(255, 255, 255, 0.5);
 }
 
-#menu-bar-search #frm-search input{
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+/* Thiết lập vị trí cho thẻ div với class dropdown*/
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
-#menu-bar-search #frm-search button{
-  color: #a0ca44;
-  border-color: #a0ca44;
+/* Nội dung Dropdown */
+.noidung_dropdown {
+  /*Ẩn nội dung các đường dẫn*/
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
-#menu-bar-search #frm-search button:hover{
-  border: none;
-  background-color: forestgreen;
-  color: white;
-}
-#menu-bar-cart {
-  box-sizing: border-box;
-  padding: 0px;
-  padding-top: 5px;
-  padding-right: 60px;
-}
-.search-box i{
-  height: 100%;
-  width: 100%;
-  line-height: 40px;
-  text-align: center;
-  font-size: 22px;
-  color: #fff;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-#menu-bar-cart i{
+/* Thiết kế style cho các đường dẫn trong Dropdown */
+.noidung_dropdown a {
   color: #404987;
-  padding-top: 15px;
-  font-size: 2rem;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
-/* MENUBAR END */
+/* thay đổi màu background khi hover vào đường dẫn */
+.noidung_dropdown a:hover {background-color: #ccc;}
+/* hiển thị nội dung dropdown khi hover */
+ .dropdown:hover .noidung_dropdown {display: block;}
 
+/* MENU BAR END */
 /* BANNER START */
 #banner {
   background-color: #f9f9ed;
