@@ -25,6 +25,9 @@
   background-color: #a0ca44;
   height: 0.2rem;
   border: none;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
 }
 /* navbar start */
 #navbar {
@@ -266,6 +269,7 @@
 }
 #new-categories .nc-item{
   padding: 0px;
+  margin-top: 10px;
 }
 
 
