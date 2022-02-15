@@ -1,12 +1,10 @@
 /* Font start */
-/* Font Product Sans */
-@font-face {
-  font-family: ProductSans;
-  src: url("/assets/fonts/ProductSans/Regular.otf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap');
 /* Font end */
 * {
-  font-family: ProductSans;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
 }
 /* Di dong */
 @media (min-width: 320px) {
@@ -43,7 +41,6 @@
   padding-right: 60px;
 }
 #navbar a {
-  font-family: ProductSans;
   color: #FFFFFF;
 }
 #navbar a:hover {
@@ -140,7 +137,7 @@
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -185,6 +182,10 @@
 }
 .banner-wrapper{
   background-color: #f9f9ed;
+}
+
+.banner-wrapper h1{
+  font-weight: bold;
 }
 /* BANNER END */
 /* FEATURED START */
