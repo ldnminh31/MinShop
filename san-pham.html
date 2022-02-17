@@ -10,10 +10,19 @@
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
     <!-- Ionic Framework CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- Trang chủ CSS -->
     <link rel="stylesheet" href="assets/css/trang-chu.css">
-    <!-- Products CSS -->
-    <link rel="stylesheet" href="assets/css/san-pham.css">
+    <!-- Lien he CSS -->
+    <link rel="stylesheet" href="assets/css/lien-he.css">
+    <!-- Gioi thieu CSS -->
+    <link rel="stylesheet" href="assets/css/gioi-thieu.css">
+    <!-- San pham CSS -->
+    <link rel="stylesheet" href="assets/css/grid-san-pham.css">
+    <link rel="stylesheet" href="assets/css/main-san-pham.css">
+    
+    
 </head>
 
 <body>
@@ -57,8 +66,8 @@
                     <div class="container-fluid">
                         <div class="collapse navbar-collapse" id="ftco-nav">
                             <ul class="navbar-nav m-auto" id="mb-list">
-                                <li class="nav-item active"><a href="index.html" class="nav-link">Trang chủ</a></li>
-                                <li class="nav-item">
+                                <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+                                <li class="nav-item active">
                                     <div class="dropdown">
                                         <button class="nut_dropdown">Sản phẩm</button>
                                         <div class="noidung_dropdown">
@@ -69,7 +78,7 @@
                                     </div>
                                 </li>
                                 <li class="nav-item"><a href="#" class="nav-link">Giới thiệu</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">Liên hệ</a></li>
+                                <li class="nav-item"><a href="lien-he.html" class="nav-link">Liên hệ</a></li>
                             </ul>
                         </div>
                     </div>
@@ -77,25 +86,306 @@
             </div>
         </div>
         <!-- menu-bar END -->
-        <h1>ok</h1>
-        <h1>ok</h1>
-        <h1>ok</h1>
-        <h1>ok</h1>
-        <h1>ok</h1>
-        <h1>ok</h1>
-        <h1>ok</h1>
-        <h1>ok</h1>
-        <h1>ok</h1>
-        <h1>ok</h1>
-        <h1>ok</h1>
-        <h1>ok</h1>
-        <h1>ok</h1>
-        <h1>ok</h1>
-        <h1>ok</h1>
-        <h1>ok</h1>
-        <h1>ok</h1>
     </div>
     <!-- container end -->
+
+
+    <!-- breadcumbs start -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- Breadcrumbs -->
+                <div class="breadcrumbs d-flex flex-row align-items-center">
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Sản phẩm</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcumbs end -->
+
+    <!-- products content -->
+   <!-- products content -->
+   <div class="bg-main">
+    <div class="container">
+        <div class="box">
+            <div class="row">
+                <div class="col-md-3 filter-col" id="filter-col">
+                    <div class="box filter-toggle-box">
+                        <button class="btn-flat btn-hover" id="filter-close">close</button>
+                    </div>
+                    <div class="box">
+                        <span class="filter-header">
+                            Categories
+                        </span>
+                        <ul class="filter-list">
+                            <li><a href="#">Wireless</a></li>
+                            <li><a href="#">In-ear headphone</a></li>
+                            <li><a href="#">Over-ear headphone</a></li>
+                            <li><a href="#">sport headphone</a></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <span class="filter-header">
+                            Price
+                        </span>
+                        <div class="price-range">
+                            <input type="text">
+                            <span>-</span>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <ul class="filter-list">
+                            <li>
+                                <div class="group-checkbox">
+                                    <input type="checkbox" id="status1">
+                                    <label for="status1">
+                                        On sale
+                                        <i class='bx bx-check'></i>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group-checkbox">
+                                    <input type="checkbox" id="status2">
+                                    <label for="status2">
+                                        In stock
+                                        <i class='bx bx-check'></i>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group-checkbox">
+                                    <input type="checkbox" id="status3">
+                                    <label for="status3">
+                                        Featured
+                                        <i class='bx bx-check'></i>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <span class="filter-header">
+                            Brands
+                        </span>
+                        <ul class="filter-list">
+                            <li>
+                                <div class="group-checkbox">
+                                    <input type="checkbox" id="remember1" checked="checked">
+                                    <label for="remember1">
+                                        JBL
+                                        <i class='bx bx-check'></i>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group-checkbox">
+                                    <input type="checkbox" id="remember2">
+                                    <label for="remember2">
+                                        Beat
+                                        <i class='bx bx-check'></i>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group-checkbox">
+                                    <input type="checkbox" id="remember3">
+                                    <label for="remember3">
+                                        Logitech
+                                        <i class='bx bx-check'></i>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group-checkbox">
+                                    <input type="checkbox" id="remember4">
+                                    <label for="remember4">
+                                        Samsung
+                                        <i class='bx bx-check'></i>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group-checkbox">
+                                    <input type="checkbox" id="remember5">
+                                    <label for="remember5">
+                                        Sony
+                                        <i class='bx bx-check'></i>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <span class="filter-header">
+                            Colors
+                        </span>
+                        <ul class="filter-list">
+                            <li>
+                                <div class="group-checkbox">
+                                    <input type="checkbox" id="remember1">
+                                    <label for="remember1">
+                                        Red
+                                        <i class='bx bx-check'></i>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group-checkbox">
+                                    <input type="checkbox" id="remember2">
+                                    <label for="remember2">
+                                        Blue
+                                        <i class='bx bx-check'></i>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group-checkbox">
+                                    <input type="checkbox" id="remember3">
+                                    <label for="remember3">
+                                        White
+                                        <i class='bx bx-check'></i>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group-checkbox">
+                                    <input type="checkbox" id="remember4">
+                                    <label for="remember4">
+                                        Pink
+                                        <i class='bx bx-check'></i>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group-checkbox">
+                                    <input type="checkbox" id="remember5">
+                                    <label for="remember5">
+                                        Yellow
+                                        <i class='bx bx-check'></i>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <span class="filter-header">
+                            rating
+                        </span>
+                        <ul class="filter-list">
+                            <li>
+                                <div class="group-checkbox">
+                                    <input type="checkbox" id="remember1">
+                                    <label for="remember1">
+                                        <span class="rating">
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                        </span>
+                                        <i class='bx bx-check'></i>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group-checkbox">
+                                    <input type="checkbox" id="remember1">
+                                    <label for="remember1">
+                                        <span class="rating">
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <i class='bx bx-check'></i>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group-checkbox">
+                                    <input type="checkbox" id="remember1">
+                                    <label for="remember1">
+                                        <span class="rating">
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bx-star'></i>
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <i class='bx bx-check'></i>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group-checkbox">
+                                    <input type="checkbox" id="remember1">
+                                    <label for="remember1">
+                                        <span class="rating">
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bx-star'></i>
+                                            <i class='bx bx-star'></i>
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <i class='bx bx-check'></i>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group-checkbox">
+                                    <input type="checkbox" id="remember1">
+                                    <label for="remember1">
+                                        <span class="rating">
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bx-star'></i>
+                                            <i class='bx bx-star'></i>
+                                            <i class='bx bx-star'></i>
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <i class='bx bx-check'></i>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="box filter-toggle-box">
+                        <button class="btn-flat btn-hover" id="filter-toggle">filter</button>
+                    </div>
+                    <div class="box">
+                        <div class="row" id="products"></div>
+                    </div>
+                    <div class="box">
+                        <ul class="pagination">
+                            <li><a href="#"><i class='bx bxs-chevron-left'></i></a></li>
+                            <li><a href="#" class="active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#"><i class='bx bxs-chevron-right'></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end products content -->
+    <!-- end products content -->
+
+
+
+
+
     <!-- JQuery -->
     <script src="vendors/jquery/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap JS -->
@@ -107,6 +397,9 @@
     <script src="https://kit.fontawesome.com/7cc8dff15d.js" crossorigin="anonymous"></script>
     <!-- Trang chủ JS -->
     <script src="assets/js/trang-chu.js"></script>
+    <!-- Chi tiet sp JS -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/product.js"></script>
 </body>
 
 </html>

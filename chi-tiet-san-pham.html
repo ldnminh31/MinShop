@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiet san pham</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <!-- Ionic Framework CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Trang chủ CSS -->
+    <link rel="stylesheet" href="assets/css/trang-chu.css">
+    <!-- Lien he CSS -->
+    <link rel="stylesheet" href="assets/css/lien-he.css">
+    <!-- Gioi thieu CSS -->
+    <link rel="stylesheet" href="assets/css/gioi-thieu.css">
+    <!-- grid + main sp -->
+    <link rel="stylesheet" href="assets/css/main-san-pham.css">
+    
+
+</head>
+
+<body>
+    <!-- container start -->
+    <div class="container-fluid">
+        <!-- navbar START -->
+        <div class="row" id="navbar">
+            <!-- navbar left START -->
+            <div class="col-md-6 text-left" id="navbar-left">
+                <a href="#" class="openModal">MIỄN PHÍ GIAO HÀNG CHO ĐƠN HÀNG TỪ
+                    400K</a>
+            </div>
+            <div class="modal">
+                <div class="modal-box">
+                    <!-- Content -->
+                    <img src="assets/imgs/home/CTKM.png" alt="">
+                    <!-- Close -->
+                    <span class="closeModal">
+                        <ion-icon name="close-circle-outline"></ion-icon>
+                    </span>
+                </div>
+            </div>
+            <!-- navbar left END -->
+            <!-- navbar right START -->
+            <div class="col-md-6 text-right" id="navbar-right"><a href="tai-khoan.html">Tài Khoản</a>
+            </div>
+            <!-- navbar right END -->
+        </div>
+        <!-- navbar END -->
+        <!-- logo-bar START -->
+        <div class="row" id="logo-bar">
+            <div class="col-md-12 lg-img">
+                <a href="index.html"><img src="assets/imgs/company/logo-medium.png" alt=""></a>
+            </div>
+        </div>
+        <!-- logo-bar END -->
+        <!-- menu-bar START -->
+        <div class="row">
+            <div class="col-md-12" id="menu-bar">
+                <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="ftco-nav">
+                            <ul class="navbar-nav m-auto" id="mb-list">
+                                <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+                                <li class="nav-item active">
+                                    <div class="dropdown">
+                                        <button class="nut_dropdown">Sản phẩm</button>
+                                        <div class="noidung_dropdown">
+                                            <a href="san-pham.html">Tất cả sản phẩm</a>
+                                            <a href="#">Nam</a>
+                                            <a href="#">Nữ</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="#" class="nav-link">Giới thiệu</a></li>
+                                <li class="nav-item"><a href="lien-he.html" class="nav-link">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- menu-bar END -->
+    </div>
+    <!-- container end -->
+
+
+    <!-- breadcumbs start -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- Breadcrumbs -->
+                <div class="breadcrumbs d-flex flex-row align-items-center">
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Sản phẩm</a>
+                        </li>
+                        <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Nam</a>
+                        </li>
+                        <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Áo
+                                sweater</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcumbs end -->
+
+    <div class="bg-main">
+        <div class="container">
+            <div class="row product-row">
+                <div class="col-md-5">
+                    <div class="product-img" id="product-img">
+                        <img src="assets/imgs/products/detail_1.jpg" alt="">
+                    </div>
+                    <div class="box">
+                        <div class="product-img-list">
+                            <div class="product-img-item">
+                                <img src="assets/imgs/products/detail_1.jpg" alt="">
+                            </div>
+                            <div class="product-img-item">
+                                <img src="assets/imgs/products/detail_1_mini_1.jpg" alt="">
+                            </div>
+                            <div class="product-img-item">
+                                <img src="assets/imgs/products/detail_1_mini_2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="product-info">
+                        <h1>
+                            Áo thun trắng STAPLE - MS001
+                        </h1>
+                        <div class="product-info-detail">
+                            <span class="product-info-detail-title">Chất liệu:</span>
+                            <a href="#"> Thun cotton 100%</a>
+                        </div>
+                        <div class="product-info-detail">
+                            <span class="product-info-detail-title">Đánh giá: </span>
+                            <span class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </span>
+                        </div>
+                        <p class="product-description">
+                            Nằm trong bộ sưu tập mới nhất, "MINSHOP đồng hành cùng thời trang Nam". Bộ áo thun bản giới
+                            hạn phiên bản STAPLE được nhiều bạn trẻ săn đón.
+                        </p>
+                        <div class="product-info-price">600.000 đồng</div>
+                        <div class="product-quantity-wrapper">
+                            <span class="product-quantity-btn">
+                                <i class='bx bx-minus'></i>
+                            </span>
+                            <span class="product-quantity">1</span>
+                            <span class="product-quantity-btn">
+                                <i class='bx bx-plus'></i>
+                            </span>
+                        </div>
+                        <div>
+                            <button class="btn-flat btn-hover">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-header">
+                    Chi tiết sản phẩm
+                </div>
+                <div class="product-detail-description">
+                    <button class="btn-flat btn-hover btn-view-description" id="view-all-description">
+                        Xem tất cả
+                    </button>
+                    <div class="product-detail-description-content">
+                        <p>
+                            <b>CHÍNH SÁCH BẢO HÀNH SẢN PHẨM</b> <br>
+                            <br>
+                            <i>Phạm vi áp dụng
+                            </i> <br>
+                            Áp dụng đối với sản phẩm phân phối tại hệ thống cửa hàng toàn quốc của MINSHOP,
+                            thông qua trang thương mại điện tử tại địa chỉ https://minshop.vn/ và đối tác (hợp pháp)
+                            trên lãnh thổ Việt Nam do MINSHOP chỉ định tuỳ từng thời điểm. <br>
+
+                            <em>(1) Điều kiện Bảo Hành: Sản phẩm còn trong thời gian bảo hành. Ngoài thời gian Bảo Hành,
+                                khách hàng có nhu cầu vui lòng sử dụng dịch vụ (tính phí) của Trung Tâm Bảo Hành. </em>
+                            <br>
+
+                            <em>(2) Sản phẩm bị lỗi phát sinh từ việc sử dụng và/hoặc bảo quản không đúng cách không
+                                thuộc
+                                phạm vi Bảo Hành ngay cả trong thời hạn quy định.</em> <br>
+
+                            <em>(3) Chính sách Bảo Hành không áp dụng đối với các phụ kiện sau: vớ, dây giày, xi, lót
+                                giày.</em>
+
+                            <em>(4) Chính sách Bảo Hành không áp dụng đối với sản phẩm mua ở nước ngoài (không
+                                được
+                                phân phối bởi MINSHOP Quốc tế).
+                            </em>
+                            <hr>
+
+                            Hotline Chăm Sóc Khách Hàng: 1900 456 789 <br>
+                            https://minshop.vn
+                            <hr>
+
+                        </p>
+                        <img src="./images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png"
+                            alt="">
+                        
+                        <ul>
+                            <li>Miễn phí giao hàng bất kể giá trị đơn hàng</li>
+                            <li>Miễn phí đổi hàng</li>
+                            <li>Ship hàng cực nhanh toàn quốc</li>
+                            <li>Hàng hiệu nổi tiếng thế giới</li>
+                            <li> ĐẶC BIỆT ĐÓN NĂM MỚI: Trúng thưởng mỗi ngày Điện thoại SAMSUNG Z Fold3, Đồng hồ Galaxy
+                                Watch
+                                4, Tai nghe SAMSUNG Bulds live khi mua sản phẩm bất kì </li>
+                        </ul>
+                        <hr>
+                        <p>ÁO THUN TAY NGẮN NAM STAPLE trẻ trung và thời trang
+                            ÁO THUN TAY NGẮN NAM STAPLE mang phong cách năng động, đem đến vẻ khỏe khoắn, nam tính, cho các chàng thêm tự tin xuống phố.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-header">
+                    Đánh giá
+                </div>
+                <div>
+                    <div class="user-rate">
+                        <div class="user-info">
+                            <div class="user-avt">
+                                <img src="assets/imgs/products/review_1.jpg" alt="">
+                            </div>
+                            <div class="user-name">
+                                <span class="name">Phan Anh</span>
+                                <span class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="user-rate-content">
+                            Sản phẩm tốt
+                        </div>
+                    </div>
+                    <div class="user-rate">
+                        <div class="user-info">
+                            <div class="user-avt">
+                                <img src="/assets/imgs/products/review_2.jpg" alt="">
+                            </div>
+                            <div class="user-name">
+                                <span class="name">Đặng Quốc Hải</span>
+                                <span class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="user-rate-content">
+                            Sẽ giới thiệu cho bạn bè, người thân
+                        </div>
+                    </div>
+                    <div class="user-rate">
+                        <div class="user-info">
+                            <div class="user-avt">
+                                <img src="assets/imgs/products/review_3.jpg" alt="">
+                            </div>
+                            <div class="user-name">
+                                <span class="name">Tri Pham</span>
+                                <span class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="user-rate-content">
+                            Sản phẩm tốt. Nhân viên hỗ trợ nhiệt tình. 
+                        </div>
+                    </div>
+                    <div class="user-rate">
+                        <div class="user-info">
+                            <div class="user-avt">
+                                <img src="assets/imgs/products/review_4.jpg" alt="">
+                            </div>
+                            <div class="user-name">
+                                <span class="name">Fred Tran</span>
+                                <span class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="user-rate-content">
+                            Quá sang trọng, quá ngon, giá so với các sản phầm tiền nhiệm thì quá tốt
+                        </div>
+                    </div>
+                    <div class="user-rate">
+                        <div class="user-info">
+                            <div class="user-avt">
+                                <img src="assets/imgs/products/review_5.jpg" alt="">
+                            </div>
+                            <div class="user-name">
+                                <span class="name">Kiều Oanh</span>
+                                <span class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="user-rate-content">
+                            Thiết kế đẹp, nhân viên nhiệt tình, tư vấn size rất ok!
+                        </div>
+                    </div>
+                    <div class="box">
+                        <ul class="pagination">
+                            <li><a href="#"><i class='bx bxs-chevron-left'></i></a></li>
+                            <li><a href="#" class="active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#"><i class='bx bxs-chevron-right'></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-header">
+                    Sản phẩm liên quan
+                </div>
+                <div class="row" id="related-products"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer START -->
+    <div class="container-fluid">
+        <div class="row" id="footer">
+            <div class="col-md-12">
+                <footer>
+                    <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
+                                class="icon ion-social-snapchat"></i></a><a href="#"><i
+                                class="icon ion-social-twitter"></i></a><a href="#"><i
+                                class="icon ion-social-facebook"></i></a></div>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="index.html">Trang chủ</a></li>
+                        <li class="list-inline-item"><a href="#">Dịch vụ</a></li>
+                        <li class="list-inline-item"><a href="#">Về chúng tôi</a></li>
+                        <li class="list-inline-item"><a href="#">Điều khoản sử dụng</a></li>
+                        <li class="list-inline-item"><a href="#">Chính sách quyền riêng tư</a></li>
+                    </ul>
+                    <p class="copyright">MINSHOP © 2022</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!-- footer END -->
+
+
+
+    <!-- JQuery -->
+    <script src="vendors/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <!-- ionic icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/7cc8dff15d.js" crossorigin="anonymous"></script>
+    <!-- Trang chủ JS -->
+    <script src="assets/js/trang-chu.js"></script>
+    <!-- Chi tiet sp JS -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/product-detail.js"></script>
+</body>
+
+</html>
