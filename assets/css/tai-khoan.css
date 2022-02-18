@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-@font-face {
-  font-family: ProductSans;
-  src: url("/assets/fonts/ProductSans/Regular.otf");
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +12,11 @@
   font-size: 3rem;
   font-family: ProductSans;
   text-align: center;
+  text-decoration: none;
+}
+#menu-bar-logo a{
+  font-weight: 800;
+  text-decoration: none;
 }
 #menu-bar-logo a:hover {
   text-decoration: none;

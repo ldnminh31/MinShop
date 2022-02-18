@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gio hang</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <!-- Ionic Framework CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Trang chủ CSS -->
+    <link rel="stylesheet" href="assets/css/trang-chu.css">
+    <!-- gio hang -->
+    <link rel="stylesheet" href="assets/css/gio-hang.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+
+        <!-- navbar START -->
+        <div class="row" id="navbar">
+            <!-- navbar left START -->
+            <div class="col-md-6 text-left" id="navbar-left">
+                <a href="#" class="openModal">MIỄN PHÍ GIAO HÀNG CHO ĐƠN HÀNG TỪ
+                    400K</a>
+            </div>
+            <div class="modal">
+                <div class="modal-box">
+                    <!-- Content -->
+                    <img src="assets/imgs/home/CTKM.png" alt="">
+                    <!-- Close -->
+                    <span class="closeModal">
+                        <ion-icon name="close-circle-outline"></ion-icon>
+                    </span>
+                </div>
+            </div>
+            <!-- navbar left END -->
+            <!-- navbar right START -->
+            <div class="col-md-6 text-right" id="navbar-right">
+                <div class="dropdown" id="dropdown-nb">
+                    <button class="nut_dropdown">Tài khoản</button>
+                    <div class="noidung_dropdown">
+                        <a href="gio-hang.html">Giỏ hàng</a>
+                        <a href="dang-nhap.html">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+            <!-- navbar right END -->
+        </div>
+        <!-- navbar END -->
+
+
+
+        <!-- logo-bar START -->
+        <div class="row" id="logo-bar">
+            <div class="col-md-12 lg-img">
+                <a href="index.html"><img src="assets/imgs/company/logo-medium.png" alt=""></a>
+            </div>
+        </div>
+        <!-- logo-bar END -->
+
+        <!-- menu-bar START -->
+        <div class="row">
+            <div class="col-md-12" id="menu-bar">
+                <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="ftco-nav">
+                            <ul class="navbar-nav m-auto" id="mb-list">
+                                <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <button class="nut_dropdown">Sản phẩm</button>
+                                        <div class="noidung_dropdown">
+                                            <a href="san-pham.html">Tất cả sản phẩm</a>
+                                            <a href="san-pham-nam.html">Nam</a>
+                                            <a href="san-pham-nu.html">Nữ</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="gioi-thieu.html" class="nav-link">Giới thiệu</a></li>
+                                <li class="nav-item"><a href="lien-he.html" class="nav-link">Liên hệ</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- menu-bar END -->
+
+    </div>
+
+
+    <!-- content -->
+    <div class="container-fluid" id="content">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Giỏ hàng</h2>
+            </div>
+        </div>
+        <div class="row labels text-center">
+            <div class="col-md-2"><label class="product-image"></label></div>
+            <div class="col-md-2"><label class="product-details">Mô tả sản phẩm</label></div>
+            <div class="col-md-2"><label class="product-price">Giá tiền</label></div>
+            <div class="col-md-2"><label class="product-quantity">Đơn giá</label></div>
+            <div class="col-md-2"><label class="product-removal"></label></div>
+            <div class="col-md-2"><label class="product-line-price">Tổng tiền</label></div>
+        </div>
+
+        <!-- product 1 -->
+        <div class="row product text-center">
+            <div class="col-md-2 product-image">
+                <img src="assets/imgs/products/detail_1.jpg" width="100%" alt="" srcset="">
+            </div>
+            <div class="col-md-2 product-details">STAPLE white</div>
+            <div class="col-md-2 product-price"> 420000 </div>
+            <div class="col-md-2 product-quantity"><input type="number" value="1" min="1"></div>
+            <div class="col-md-2 product-removal">
+                <button type="button" class="btn btn-outline-primary remove-product">Xóa</button>
+            </div>
+            <div class="col-md-2 product-line-price">420000</div>
+        </div>
+        <hr>
+        <!-- product 2 -->
+        <div class="row product text-center">
+            <div class="col-md-2 product-image">
+                <img src="assets/imgs/products/related2_1.png" width="100%" alt="" srcset="">
+            </div>
+            <div class="col-md-2 product-details">STAPLE white red</div>
+            <div class="col-md-2 product-price"> 450000 </div>
+            <div class="col-md-2 product-quantity"><input type="number" value="1" min="1"></div>
+            <div class="col-md-2 product-removal">
+                <button type="button" class="btn btn-outline-primary remove-product">Xóa</button>
+            </div>
+            <div class="col-md-2 product-line-price">450000</div>
+        </div>
+        <hr>
+        <!-- product 2 -->
+        <div class="row product text-center">
+            <div class="col-md-2 product-image">
+                <img src="assets/imgs/products/related2_1.png" width="100%" alt="" srcset="">
+            </div>
+            <div class="col-md-2 product-details">STAPLE white red</div>
+            <div class="col-md-2 product-price"> 450000 </div>
+            <div class="col-md-2 product-quantity"><input type="number" value="1" min="1"></div>
+            <div class="col-md-2 product-removal">
+                <button type="button" class="btn btn-outline-primary remove-product">Xóa</button>
+            </div>
+            <div class="col-md-2 product-line-price">450000</div>
+        </div>
+        <hr>
+
+
+
+
+
+        <!-- total -->
+        <div class="row totals text-center">
+            <div class="col-md-3 totals-item">
+                <label>Giá sản phẩm</label>
+                <div class="totals-value" id="cart-subtotal">420000</div>
+            </div>
+            <div class="col-md-3 totals-item">
+                <label>VAT (5%)</label>
+                <div class="totals-value" id="cart-tax">3.60</div>
+            </div>
+            <div class="col-md-3 totals-item">
+                <label>Phí vận chuyển</label>
+                <div class="totals-value" id="cart-shipping">35000</div>
+            </div>
+            <div class="col-md-3 totals-item">
+                <label>Tổng cộng</label>
+                <div class="totals-value" id="cart-total">90.57</div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- btn -->
+        <div class="row">
+            <div class="col-md-12 text-center"><button class="checkout"><a href="thanh-toan.html">Đến trang thanh
+                        toán</a></button></div>
+        </div>
+    </div>
+    <!-- content close -->
+
+
+
+    <!-- JQuery -->
+    <script src="vendors/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <!-- ionic icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/7cc8dff15d.js" crossorigin="anonymous"></script>
+    <!-- trang chu -->
+    <script src="assets/js/trang-chu.js"></script>
+    <!-- Gio hang JS -->
+    <script src="assets/js/gio-hang.js"></script>
+</body>
+
+</html>

@@ -46,7 +46,14 @@
             </div>
             <!-- navbar left END -->
             <!-- navbar right START -->
-            <div class="col-md-6 text-right" id="navbar-right"><a href="tai-khoan.html">Tài Khoản</a>
+            <div class="col-md-6 text-right" id="navbar-right">
+                <div class="dropdown" id="dropdown-nb">
+                    <button class="nut_dropdown">Tài khoản</button>
+                    <div class="noidung_dropdown">
+                        <a href="gio-hang.html">Giỏ hàng</a>
+                        <a href="dang-nhap.html">Đăng nhập</a>
+                    </div>
+                </div>
             </div>
             <!-- navbar right END -->
         </div>
@@ -71,12 +78,12 @@
                                         <button class="nut_dropdown">Sản phẩm</button>
                                         <div class="noidung_dropdown">
                                             <a href="san-pham.html">Tất cả sản phẩm</a>
-                                            <a href="#">Nam</a>
-                                            <a href="#">Nữ</a>
+                                            <a href="san-pham-nam.html">Nam</a>
+                                            <a href="san-pham-nu.html">Nữ</a>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="nav-item"><a href="#" class="nav-link">Giới thiệu</a></li>
+                                <li class="nav-item"><a href="gioi-thieu.html" class="nav-link">Giới thiệu</a></li>
                                 <li class="nav-item"><a href="lien-he.html" class="nav-link">Liên hệ</a></li>
                             </ul>
                         </div>
@@ -97,12 +104,11 @@
                 <div class="breadcrumbs d-flex flex-row align-items-center">
                     <ul>
                         <li><a href="index.html">Trang chủ</a></li>
-                        <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Sản phẩm</a>
+                        <li class="active"><a href="san-pham.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Sản phẩm</a>
                         </li>
-                        <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Nam</a>
+                        <li class="active"><a href="san-pham-nam.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Nam</a>
                         </li>
-                        <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Áo
-                                sweater</a>
+                        <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Áo thun</a>
                         </li>
                     </ul>
                 </div>
@@ -111,6 +117,8 @@
     </div>
     <!-- breadcumbs end -->
 
+
+    <!-- content -->
     <div class="bg-main">
         <div class="container">
             <div class="row product-row">
@@ -182,7 +190,7 @@
                     <div class="product-detail-description-content">
                         <p>
                             <b>CHÍNH SÁCH BẢO HÀNH SẢN PHẨM</b> <br>
-                            <br>
+                            <hr>
                             <i>Phạm vi áp dụng
                             </i> <br>
                             Áp dụng đối với sản phẩm phân phối tại hệ thống cửa hàng toàn quốc của MINSHOP,
@@ -355,7 +363,7 @@
             </div>
         </div>
     </div>
-
+    <!-- content end -->
 
 
     <!-- footer START -->
@@ -370,7 +378,7 @@
                     <ul class="list-inline">
                         <li class="list-inline-item"><a href="index.html">Trang chủ</a></li>
                         <li class="list-inline-item"><a href="#">Dịch vụ</a></li>
-                        <li class="list-inline-item"><a href="#">Về chúng tôi</a></li>
+                        <li class="list-inline-item"><a href="gioi-thieu.html">Về chúng tôi</a></li>
                         <li class="list-inline-item"><a href="#">Điều khoản sử dụng</a></li>
                         <li class="list-inline-item"><a href="#">Chính sách quyền riêng tư</a></li>
                     </ul>

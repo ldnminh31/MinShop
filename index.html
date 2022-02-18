@@ -6,17 +6,28 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
     <!-- Ionic Framework CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <!-- Trang chủ CSS -->
     <link rel="stylesheet" href="assets/css/trang-chu.css">
+    <link rel="stylesheet" href="assets/css/main-san-pham.css">
+
+
 </head>
 
 <body>
     <!-- container fluid START -->
     <div class="container-fluid">
+
+
         <!-- navbar START -->
         <div class="row" id="navbar">
             <!-- navbar left START -->
@@ -36,11 +47,21 @@
             </div>
             <!-- navbar left END -->
             <!-- navbar right START -->
-            <div class="col-md-6 text-right" id="navbar-right"><a href="tai-khoan.html">Tài Khoản</a>
+            <div class="col-md-6 text-right" id="navbar-right">
+                <div class="dropdown" id="dropdown-nb">
+                    <button class="nut_dropdown">Tài khoản</button>
+                    <div class="noidung_dropdown">
+                        <a href="gio-hang.html">Giỏ hàng</a>
+                        <a href="dang-nhap.html">Đăng nhập</a>
+                    </div>
+                </div>
             </div>
             <!-- navbar right END -->
         </div>
         <!-- navbar END -->
+
+
+
         <!-- logo-bar START -->
         <div class="row" id="logo-bar">
             <div class="col-md-12 lg-img">
@@ -48,10 +69,13 @@
             </div>
         </div>
         <!-- logo-bar END -->
+
+
+
         <!-- menu-bar START -->
         <div class="row">
             <div class="col-md-12" id="menu-bar">
-                <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" >
+                <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
                     <div class="container-fluid">
                         <div class="collapse navbar-collapse" id="ftco-nav">
                             <ul class="navbar-nav m-auto" id="mb-list">
@@ -60,14 +84,15 @@
                                     <div class="dropdown">
                                         <button class="nut_dropdown">Sản phẩm</button>
                                         <div class="noidung_dropdown">
-                                          <a href="san-pham.html">Tất cả sản phẩm</a>
-                                          <a href="#">Nam</a>
-                                          <a href="#">Nữ</a>
+                                            <a href="san-pham.html">Tất cả sản phẩm</a>
+                                            <a href="san-pham-nam.html">Nam</a>
+                                            <a href="san-pham-nu.html">Nữ</a>
                                         </div>
-                                      </div>
+                                    </div>
                                 </li>
                                 <li class="nav-item"><a href="gioi-thieu.html" class="nav-link">Giới thiệu</a></li>
                                 <li class="nav-item"><a href="lien-he.html" class="nav-link">Liên hệ</a></li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -75,6 +100,9 @@
             </div>
         </div>
         <!-- menu-bar END -->
+
+
+
         <!-- banner START -->
         <div class="row" id="banner">
             <div class="col-md-12">
@@ -87,7 +115,8 @@
                                     <p class="lead">BỘ SƯU TẬP MÙA THU 2022</p>
                                     <h1 class="display-3">Giảm giá <br> lên đến 30%</h1>
                                     <p class="lead">
-                                        <a class="btn btn-primary btn-lg" id="banner-button" href="#" role="button">MUA
+                                        <a class="btn btn-primary btn-lg" id="banner-button" href="san-pham-nu.html"
+                                            role="button">MUA
                                             NGAY</a>
                                     </p>
                                 </div>
@@ -102,7 +131,8 @@
                                     <p class="lead">BỘ SƯU TẬP NAM</p>
                                     <h1 class="display-3">Giảm giá <br> lên đến 70%</h1>
                                     <p class="lead">
-                                        <a class="btn btn-primary btn-lg" id="banner-button" href="chi-tiet-san-pham.html" role="button">MUA
+                                        <a class="btn btn-primary btn-lg" id="banner-button" href="san-pham-nam.html"
+                                            role="button">MUA
                                             NGAY</a>
                                     </p>
                                 </div>
@@ -117,7 +147,8 @@
                                     <p class="lead">BỘ SƯU TẬP FRIENDS</p>
                                     <h1 class="display-3">Phiên bản <br> giới hạn</h1>
                                     <p class="lead">
-                                        <a class="btn btn-primary btn-lg" id="banner-button" href="#" role="button">MUA
+                                        <a class="btn btn-primary btn-lg" id="banner-button" href="san-pham.html"
+                                            role="button">MUA
                                             NGAY</a>
                                     </p>
                                 </div>
@@ -138,180 +169,281 @@
             </div>
         </div>
         <!-- banner END -->
+
+
+
         <!-- featured START -->
         <div class="row" id="featured">
             <!-- featured item 1 START -->
             <div class="col-md-4">
                 <div class="featured-item-1 align-items-center">
                     <div class="featured-item-link">
-                        <a href="#">women's</a>
+                        <a href="san-pham-nu.html">women's</a>
                     </div>
                 </div>
             </div>
             <!-- featured item 1 END -->
+
+
             <!-- featured item 2 START -->
             <div class="col-md-4">
                 <div class="featured-item-2 align-items-center">
                     <div class="featured-item-link">
-                        <a href="#">ACCESSORIES</a>
+                        <a href="san-pham.html">ACCESSORIES</a>
                     </div>
                 </div>
             </div>
             <!-- featured item 2 END -->
+
+
             <!-- featured item 3 START -->
             <div class="col-md-4">
                 <div class="featured-item-3 align-items-center">
                     <div class="featured-item-link">
-                        <a href="#">MEN'S</a>
+                        <a href="san-pham-nam.html">MEN'S</a>
                     </div>
                 </div>
             </div>
             <!-- featured item 3 END -->
         </div>
         <!-- featured END -->
+
+
+
+
         <!-- new-categories START -->
         <div class="row" id="new-categories">
             <div class="col-md-12">
-                <h2 class="text-center nc-title">Sản phẩm mới</h2>
-                <hr class="green-line">
-                <div class="row">
-                    <!-- item-1 START -->
-                    <div class="col nc-item">
-                        <div class="card nc-card" style="width: 18rem;">
-                            <a href="#"><img src="assets/imgs/home/item-1.png" class="card-img-top before"
-                                    alt="..."></a>
-                            <div class="card-body text-center nc-price">
-                                <a href="#" class="card-link">Hoodie (Nâu sẫm)</a>
-                                <br>
-                                <span>220.000đ</span>
-                                <span>300.000đ</span>
+                <div class="section">
+                    <div class="container-fluid">
+                        <h1 class="text-center">Sản phẩm mới</h1>
+                        <hr class="green-line">
+                        <div class="row" id="best-products">
+                            <div class="col-md-3">
+                                <div class="product-card">
+                                    <div class="product-card-img">
+                                        <img src="assets/imgs/home/item-1.png" alt="">
+                                        <img src="assets/imgs/home/item-2.png" alt="">
+                                    </div>
+                                    <div class="product-card-info">
+                                        <div class="product-btn">
+                                            <button class="btn-flat btn-hover btn-shop-now"><a
+                                                    href="chi-tiet-san-pham.html">MUA NGAY</a></button>
+                                            <button class="btn-flat btn-hover btn-cart-add">
+                                                <i class='bx bxs-cart-add'></i>
+                                            </button>
+                                            <button class="btn-flat btn-hover btn-cart-add">
+                                                <i class='bx bxs-heart'></i>
+                                            </button>
+                                        </div>
+                                        <div class="product-card-name">
+                                            Hoodie X2F5
+                                        </div>
+                                        <div class="product-card-price">
+                                            <span><del>1.200.000 vnđ</del></span>
+                                            <span class="curr-price">700.000 vnđ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="product-card">
+                                    <div class="product-card-img">
+                                        <img src="assets/imgs/home/item-2.png" alt="">
+                                        <img src="assets/imgs/home/item-3.png" alt="">
+                                    </div>
+                                    <div class="product-card-info">
+                                        <div class="product-btn">
+                                            <button class="btn-flat btn-hover btn-shop-now"><a
+                                                    href="chi-tiet-san-pham.html">MUA NGAY</a></button>
+                                            <button class="btn-flat btn-hover btn-cart-add">
+                                                <i class='bx bxs-cart-add'></i>
+                                            </button>
+                                            <button class="btn-flat btn-hover btn-cart-add">
+                                                <i class='bx bxs-heart'></i>
+                                            </button>
+                                        </div>
+                                        <div class="product-card-name">
+                                            Túi thời trang
+                                        </div>
+                                        <div class="product-card-price">
+                                            <span><del>500.000 vnđ</del></span>
+                                            <span class="curr-price">400.000 vnđ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="product-card">
+                                    <div class="product-card-img">
+                                        <img src="assets/imgs/home/item-3.png" alt="">
+                                        <img src="assets/imgs/home/item-4.png" alt="">
+                                    </div>
+                                    <div class="product-card-info">
+                                        <div class="product-btn">
+                                            <button class="btn-flat btn-hover btn-shop-now"><a
+                                                    href="chi-tiet-san-pham.html">MUA NGAY</a></button>
+                                            <button class="btn-flat btn-hover btn-cart-add">
+                                                <i class='bx bxs-cart-add'></i>
+                                            </button>
+                                            <button class="btn-flat btn-hover btn-cart-add">
+                                                <i class='bx bxs-heart'></i>
+                                            </button>
+                                        </div>
+                                        <div class="product-card-name">
+                                            Sweater vàng
+                                        </div>
+                                        <div class="product-card-price">
+                                            <span><del>1.000.000 vnđ</del></span>
+                                            <span class="curr-price">700.000 vnđ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="product-card">
+                                    <div class="product-card-img">
+                                        <img src="assets/imgs/home/item-4.png" alt="">
+                                        <img src="assets/imgs/home/item-5.png" alt="">
+                                    </div>
+                                    <div class="product-card-info">
+                                        <div class="product-btn">
+                                            <button class="btn-flat btn-hover btn-shop-now"><a
+                                                    href="chi-tiet-san-pham.html">MUA NGAY</a></button>
+                                            <button class="btn-flat btn-hover btn-cart-add">
+                                                <i class='bx bxs-cart-add'></i>
+                                            </button>
+                                            <button class="btn-flat btn-hover btn-cart-add">
+                                                <i class='bx bxs-heart'></i>
+                                            </button>
+                                        </div>
+                                        <div class="product-card-name">
+                                            Túi du lịch
+                                        </div>
+                                        <div class="product-card-price">
+                                            <span><del>2.200.000 vnđ</del></span>
+                                            <span class="curr-price">1.700.000 vnđ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="product-card">
+                                    <div class="product-card-img">
+                                        <img src="assets/imgs/home/item-5.png" alt="">
+                                        <img src="assets/imgs/home/item-1.png" alt="">
+                                    </div>
+                                    <div class="product-card-info">
+                                        <div class="product-btn">
+                                            <button class="btn-flat btn-hover btn-shop-now"><a
+                                                    href="chi-tiet-san-pham.html">MUA NGAY</a></button>
+                                            <button class="btn-flat btn-hover btn-cart-add">
+                                                <i class='bx bxs-cart-add'></i>
+                                            </button>
+                                            <button class="btn-flat btn-hover btn-cart-add">
+                                                <i class='bx bxs-heart'></i>
+                                            </button>
+                                        </div>
+                                        <div class="product-card-name">
+                                            Giày da
+                                        </div>
+                                        <div class="product-card-price">
+                                            <span><del>2.200.000 vnđ</del></span>
+                                            <span class="curr-price">1.700.000 vnđ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="product-card">
+                                    <div class="product-card-img">
+                                        <img src="assets/imgs/products/related1_1.jpg" alt="">
+                                        <img src="assets/imgs/products/related1_2.png" alt="">
+                                    </div>
+                                    <div class="product-card-info">
+                                        <div class="product-btn">
+                                            <button class="btn-flat btn-hover btn-shop-now"><a
+                                                    href="chi-tiet-san-pham.html">MUA NGAY</a></button>
+                                            <button class="btn-flat btn-hover btn-cart-add">
+                                                <i class='bx bxs-cart-add'></i>
+                                            </button>
+                                            <button class="btn-flat btn-hover btn-cart-add">
+                                                <i class='bx bxs-heart'></i>
+                                            </button>
+                                        </div>
+                                        <div class="product-card-name">
+                                            Khoác da kaki
+                                        </div>
+                                        <div class="product-card-price">
+                                            <span><del>1.700.000 vnđ</del></span>
+                                            <span class="curr-price">1.600.000 vnđ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="product-card">
+                                    <div class="product-card-img">
+                                        <img src="assets/imgs/products/related3_1.png" alt="">
+                                        <img src="assets/imgs/products/related3_2.png" alt="">
+                                    </div>
+                                    <div class="product-card-info">
+                                        <div class="product-btn">
+                                            <button class="btn-flat btn-hover btn-shop-now"><a
+                                                    href="chi-tiet-san-pham.html">MUA NGAY</a></button>
+                                            <button class="btn-flat btn-hover btn-cart-add">
+                                                <i class='bx bxs-cart-add'></i>
+                                            </button>
+                                            <button class="btn-flat btn-hover btn-cart-add">
+                                                <i class='bx bxs-heart'></i>
+                                            </button>
+                                        </div>
+                                        <div class="product-card-name">
+                                            STAPLE Cam
+                                        </div>
+                                        <div class="product-card-price">
+                                            <span><del>500.000 vnđ</del></span>
+                                            <span class="curr-price">420.000 vnđ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="product-card">
+                                    <div class="product-card-img">
+                                        <img src="assets/imgs/home/item-1.png" alt="">
+                                        <img src="assets/imgs/home/item-2.png" alt="">
+                                    </div>
+                                    <div class="product-card-info">
+                                        <div class="product-btn">
+                                            <button class="btn-flat btn-hover btn-shop-now"><a
+                                                    href="chi-tiet-san-pham.html">MUA NGAY</a></button>
+                                            <button class="btn-flat btn-hover btn-cart-add">
+                                                <i class='bx bxs-cart-add'></i>
+                                            </button>
+                                            <button class="btn-flat btn-hover btn-cart-add">
+                                                <i class='bx bxs-heart'></i>
+                                            </button>
+                                        </div>
+                                        <div class="product-card-name">
+                                            Hoodie X2F5
+                                        </div>
+                                        <div class="product-card-price">
+                                            <span><del>1.200.000 vnđ</del></span>
+                                            <span class="curr-price">700.000 vnđ</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- item-1 END -->
-                    <!-- item-2 START -->
-                    <div class="col nc-item">
-                        <div class="card nc-card" style="width: 18rem;">
-                            <a href="#"><img src="assets/imgs/home/item-2.png" class="card-img-top" alt="..."></a>
-                            <div class="card-body text-center nc-price">
-                                <a href="#" class="card-link">Túi xách thời trang</a>
-                                <br>
-                                <span>300.000đ</span>
-                                <span>570.000đ</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item-2 END -->
-                    <!-- item-3 START -->
-                    <div class="col nc-item">
-                        <div class="card nc-card" style="width: 18rem;">
-                            <a href="#"><img src="assets/imgs/home/item-3.png" class="card-img-top" alt="..."></a>
-                            <div class="card-body text-center nc-price">
-                                <a href="#" class="card-link">Sweater (Vàng nghệ)</a>
-                                <br>
-                                <span>120.000đ</span>
-                                <span>230.000đ</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item-3 END -->
-                    <!-- item-4 START -->
-                    <div class="col nc-item">
-                        <div class="card nc-card" style="width: 18rem;">
-                            <a href="#"><img src="assets/imgs/home/item-4.png" class="card-img-top" alt="..."></a>
-                            <div class="card-body text-center nc-price">
-                                <a href="#" class="card-link">Túi du lịch</a>
-                                <br>
-                                <span>1.200.000đ</span>
-                                <span>1.300.000đ</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item-4 END -->
-                    <!-- item-5 START -->
-                    <div class="col nc-item">
-                        <div class="card nc-card" style="width: 18rem;">
-                            <a href="#"><img src="assets/imgs/home/item-5.png" class="card-img-top" alt="..."></a>
-                            <div class="card-body text-center nc-price">
-                                <a href="#" class="card-link">Giày thời trang</a>
-                                <br>
-                                <span>450.000đ</span>
-                                <span>520.000đ</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item-5 END -->
-                </div>
-                <div class="row">
-                    <!-- item-1 START -->
-                    <div class="col nc-item">
-                        <div class="card nc-card" style="width: 18rem;">
-                            <a href="#"><img src="assets/imgs/home/item-1.png" class="card-img-top" alt="..."></a>
-                            <div class="card-body text-center nc-price">
-                                <a href="#" class="card-link">Hoodie (Nâu sẫm)</a>
-                                <br>
-                                <span>220.000đ</span>
-                                <span>300.000đ</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item-1 END -->
-                    <!-- item-2 START -->
-                    <div class="col nc-item">
-                        <div class="card nc-card" style="width: 18rem;">
-                            <a href="#"><img src="assets/imgs/home/item-2.png" class="card-img-top" alt="..."></a>
-                            <div class="card-body text-center nc-price">
-                                <a href="#" class="card-link">Túi xách thời trang</a>
-                                <br>
-                                <span>300.000đ</span>
-                                <span>570.000đ</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item-2 END -->
-                    <!-- item-3 START -->
-                    <div class="col nc-item">
-                        <div class="card nc-card" style="width: 18rem;">
-                            <a href="#"><img src="assets/imgs/home/item-3.png" class="card-img-top" alt="..."></a>
-                            <div class="card-body text-center nc-price">
-                                <a href="#" class="card-link">Sweater (Vàng nghệ)</a>
-                                <br>
-                                <span>120.000đ</span>
-                                <span>230.000đ</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item-3 END -->
-                    <!-- item-4 START -->
-                    <div class="col nc-item">
-                        <div class="card nc-card" style="width: 18rem;">
-                            <a href="#"><img src="assets/imgs/home/item-4.png" class="card-img-top" alt="..."></a>
-                            <div class="card-body text-center nc-price">
-                                <a href="#" class="card-link">Túi du lịch</a>
-                                <br>
-                                <span>1.200.000đ</span>
-                                <span>1.300.000đ</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item-4 END -->
-                    <!-- item-5 START -->
-                    <div class="col nc-item">
-                        <div class="card nc-card" style="width: 18rem;">
-                            <a href="#"><img src="assets/imgs/home/item-5.png" class="card-img-top" alt="..."></a>
-                            <div class="card-body text-center nc-price">
-                                <a href="#" class="card-link">Giày thời trang</a>
-                                <br>
-                                <span>450.000đ</span>
-                                <span>520.000đ</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item-5 END -->
                 </div>
             </div>
         </div>
         <!-- new-categories END -->
+
+
+
         <!-- banner-timeout START -->
         <div class="row" id="banner-timeout">
             <div class="col-md-6">
@@ -342,28 +474,54 @@
                             <div class="timer_unit">Sec</div>
                         </li>
                     </ul>
-                    <div class="bt-button"><a href="#">MUA NGAY</a></div>
+                    <div class="bt-button"><a href="chi-tiet-san-pham.html">MUA NGAY</a></div>
                 </div>
             </div>
         </div>
         <!-- banner-timeout END -->
+
+
+
         <!-- favorite-items START -->
+        
         <div class="row" id="favorite-items">
-            <div class="col">
-                <h1 class="text-center">Sản phẩm bán chạy</h1>
+            <div class="col-md-12">
+                <h1 class="text-center">Sản phẩm mới</h1>
                 <hr class="green-line">
-                <div class="card fi-wrapper" style="width: 18rem;">
-                    <img src="assets/imgs/home/item-2.png" class="card-img-top" alt="...">
-                    <div class="card-body text-center fi-wrapper">
-                        <a href="#" class="card-link">Túi xách thời trang</a>
-                        <br>
-                        <span>300.000đ</span>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="assets/imgs/products/related4_1.png" alt="">
+                        <img src="assets/imgs/products/related4_2.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn">
+                            <button class="btn-flat btn-hover btn-shop-now"><a
+                                    href="chi-tiet-san-pham.html">MUA NGAY</a></button>
+                            <button class="btn-flat btn-hover btn-cart-add">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+                            <button class="btn-flat btn-hover btn-cart-add">
+                                <i class='bx bxs-heart'></i>
+                            </button>
+                        </div>
+                        <div class="product-card-name">
+                            STAPLE Tale
+                        </div>
+                        <div class="product-card-price">
+                            <span><del>500.000 vnđ</del></span>
+                            <span class="curr-price">420.000 vnđ</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- favorite-items END -->
         <hr>
+
+
+
         <!-- contact-form START -->
         <div class="row" id="contact-form">
             <div class="col-md-12">
@@ -380,13 +538,13 @@
                                 <i class="fas fa-phone-alt"></i>
                                 <div class="topic">Số điện thoại</div>
                                 <div class="text-one">+070 505 9999</div>
-                                <div class="text-two">+096 343 5678</div>
+                                <div class="text-two"><a href="tel:1900456789+">1900 456 789</a></div>
                             </div>
                             <div class="email details">
                                 <i class="fas fa-envelope"></i>
                                 <div class="topic">Email</div>
                                 <div class="text-one">minshop@gmail.com</div>
-                                <div class="text-two">info.minshop@gmail.com</div>
+                                <div class="text-two"><a href="mailto:info.minshop@gmail.com">info.minshop@gmail.com</a></div>
                             </div>
                         </div>
                         <div class="right-side">
@@ -404,7 +562,14 @@
                                     <input type="text" placeholder="Nội dung">
                                 </div>
                                 <div class="button">
-                                    <input type="button" value="Gửi">
+                                    <input type="button" value="Gửi" id="btn-noti">
+                                    <div class="alert hide">
+                                        <span class="fas fa-exclamation-circle"></span>
+                                        <span class="msg">Đã gửi yêu cầu của bạn</span>
+                                        <div class="close-btn">
+                                           <span class="fas fa-times"></span>
+                                        </div>
+                                     </div>
                                 </div>
                             </form>
                         </div>
@@ -413,6 +578,9 @@
             </div>
             <!-- contact-form END -->
         </div>
+        <!-- contact form END -->
+
+
         <!-- footer START -->
         <div class="row" id="footer">
             <div class="col-md-12">
@@ -424,7 +592,7 @@
                     <ul class="list-inline">
                         <li class="list-inline-item"><a href="index.html">Trang chủ</a></li>
                         <li class="list-inline-item"><a href="#">Dịch vụ</a></li>
-                        <li class="list-inline-item"><a href="#">Về chúng tôi</a></li>
+                        <li class="list-inline-item"><a href="gioi-thieu.html">Về chúng tôi</a></li>
                         <li class="list-inline-item"><a href="#">Điều khoản sử dụng</a></li>
                         <li class="list-inline-item"><a href="#">Chính sách quyền riêng tư</a></li>
                     </ul>
@@ -433,6 +601,8 @@
             </div>
         </div>
         <!-- footer END -->
+
+        
     </div>
     <!-- container fluid END -->
 

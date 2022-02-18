@@ -54,7 +54,7 @@ let product_list = document.querySelector('#related-products')
 renderProducts = (products) => {
     products.forEach(e => {
         let prod = `
-            <div class="col-4 col-md-6 col-sm-12">
+            <div class="col-md-4">
                 <div class="product-card">
                     <div class="product-card-img">
                         <img src="${e.image1}" alt="">
@@ -62,7 +62,7 @@ renderProducts = (products) => {
                     </div>
                     <div class="product-card-info">
                         <div class="product-btn">
-                            <a href="./product-detail.html" class="btn-flat btn-hover btn-shop-now">shop now</a>
+                            <a href="chi-tiet-san-pham.html" class="btn-flat btn-hover btn-shop-now">shop now</a>
                             <button class="btn-flat btn-hover btn-cart-add">
                                 <i class='bx bxs-cart-add'></i>
                             </button>

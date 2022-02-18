@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toan</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <!-- Ionic Framework CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Trang chủ CSS -->
+    <link rel="stylesheet" href="assets/css/trang-chu.css">
+    <!-- gio hang -->
+    <link rel="stylesheet" href="assets/css/thanh-toan.css">
+</head>
+
+<body>
+
+   
+    <div class="container">
+        <h1>Xác minh thanh toán</h1>
+        <div class="first-row">
+            <div class="owner">
+                <h3>Tên chủ thẻ</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="cvv">
+                <h3>CVV</h3>
+                <div class="input-field">
+                    <input type="password">
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="card-number">
+                <h3>Mã số thẻ</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+            <h3>Ngày phát hành thẻ</h3>
+            <div class="selection">
+                <div class="date">
+                    <select name="months" id="months">
+                        <option value="Jan">01</option>
+                        <option value="Feb">02</option>
+                        <option value="Mar">03</option>
+                        <option value="Apr">04</option>
+                        <option value="May">05</option>
+                        <option value="Jun">06</option>
+                        <option value="Jul">07</option>
+                        <option value="Aug">08</option>
+                        <option value="Sep">09</option>
+                        <option value="Oct">10</option>
+                        <option value="Nov">11</option>
+                        <option value="Dec">12</option>
+                      </select>
+                      <select name="years" id="years">
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                      </select>
+                </div>
+                <div class="cards">
+                    <img src="mc.png" alt="">
+                    <img src="vi.png" alt="">
+                    <img src="pp.png" alt="">
+                </div>
+            </div>    
+        </div>
+        <a href="index.html">Xác minh</a>
+    </div>
+
+
+
+    <!-- JQuery -->
+    <script src="vendors/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <!-- ionic icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/7cc8dff15d.js" crossorigin="anonymous"></script>
+    <!-- trang chu -->
+    <script src="assets/js/trang-chu.js"></script>
+    <!-- Gio hang JS -->
+    <script src="assets/js/gio-hang.js"></script>
+</body>
+
+</html>
